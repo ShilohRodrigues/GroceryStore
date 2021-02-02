@@ -1,0 +1,122 @@
+
+
+
+#aisleWrapper{
+	margin:auto;
+}
+
+#aisleHeader{
+    align-content: center;
+    width:1103px;
+    height: 60px;
+    padding-bottom:60px;
+    border-bottom: 1px solid #A9A9A9;
+    background-color:#fff;
+  
+    
+}
+
+#aisleBody{
+    width:1103px;
+    height: 2639px;
+    margin-right: 400px;
+    margin-left:400px;
+	font-size:32px;
+	line-height:16px;
+	color:#111111;
+	font-family:'Helvetica';
+    background-color:#fff;
+}
+
+
+#aisleNav{
+    background-color:#333;
+    
+    
+}
+
+#aisleNav ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    
+}
+
+#aisleNav ul li{
+    float:right;
+}
+#aisleNav ul li:hover{
+    text-decoration:underline;
+}
+
+#aisleNav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#000;
+    padding-left:12px;
+    padding-right:12px;
+    
+} 
+
+
+.aisleLogo{
+    position:relative;
+    top:35px;
+    height:60px;
+    width: 150px;
+}
+
+#aisleWrapper{
+    padding-top: 60px;
+}
+
+#aisleSideMenu{
+    background-color:white; 
+    float:left;
+    width:300px;
+    height: 600px;
+}
+
+#aislePriceSearch{
+    font-size:22px;    
+}
+
+#aislePriceSearch button{
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+    border:1px solid blue ;
+    border-radius:10px;
+    background-color:#fff;
+    font-weight:bold;
+    
+}
+
+
+#aisleTable tr td{
+    position:relative;
+    padding:0;
+    height:320px;
+    width:250px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);  
+    
+}
+
+#aisleTable tr td:hover{
+     box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.3);  
+}
+
+#aisleTable tr td p{
+    padding-left: 15px;
+    font-size:15px;
+    
+}
+
+.productImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height:200px;
+    max-width:200px;
+}
