@@ -119,27 +119,27 @@
 }
 
 #HomeHeader{
-    align-content: right;
-    right: 140px;
-    width:1103px;
-    height: 60px;
-    background-color:#fff;   
+  align-content: right;
+  right: 140px;
+  width:1103px;
+  height: 60px;
+  background-color:#fff;   
 }
 
 #HomeHeader ul {
-    list-style-type: none;
-    margin:0;
-    padding:0; 
-    overflow: hidden;
-    background-color: #292929;
-    position: fixed;
-    top: 0;
-    height: 60px;
-    width: 100%;
+  list-style-type: none;
+  margin:0;
+  padding:0; 
+  overflow: hidden;
+  background-color: #292929;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
 }
 
 #HomeHeader ul li {
-    float:left;
+  float:left;
 }
 
 #HomeHeader ul li a:hover {
@@ -148,12 +148,12 @@
 }
 
 #HomeHeader ul li a {
-    display: block;
-    color: #fff;
-    padding: 16px;
-    font-size: 20px;    
-    text-decoration: none;
-    height: 60px;
+  display: block;
+  color: #fff;
+  padding: 16px;
+  font-size: 20px;    
+  text-decoration: none;
+  height: 60px;
 } 
 
 .userLogo {
@@ -162,33 +162,33 @@
   width: 25px;
 }
 
-.Logo {
-    position:relative;
-    height:25px;
-    width: 30px;
+.MiniLogo {
+  position:relative;
+  height:25px;
+  width: 30px;
 }
 
 #HomeFooter{
-    align-content: center;
-    width:1103px;
-    height: 60px;
-    background-color:#fff;   
+  align-content: center;
+  width:1103px;
+  height: 60px;
+  background-color:#fff;   
 }
 
 #HomeFooter ul {
-    list-style-type: none;
-    margin:0;
-    padding:0; 
-    overflow: hidden;
-    background-color: #292929;
-    position: fixed;
-    bottom:0px;
-    height: 60px;
-    width: 100%;
+  list-style-type: none;
+  margin:0;
+  padding:0; 
+  overflow: hidden;
+  background-color: #292929;
+  position: fixed;
+  bottom:0px;
+  height: 60px;
+  width: 100%;
 }
 
 #HomeFooter ul li {
-    float:left;
+  float:left;
 }
 
 #HomeFooter ul li a:hover {
@@ -197,10 +197,30 @@
 }
 
 #HomeFooter ul li a {
-    display: block;
-    color: #fff;
-    padding: 16px;
-    font-size: 20px;    
-    text-decoration: none;
-    height: 60px;
+  display: block;
+  color: #fff;
+  padding: 16px;
+  font-size: 20px;    
+  text-decoration: none;
+  height: 60px;
 } 
+
+#HomeTitle {
+  border-bottom: 1px solid #A9A9A9;
+  width: 100%;
+}
+
+#HomeTitleName {
+  display: inline-block;
+}
+
+#HomeTitleImg {
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.Logo {
+  position:relative;
+  height:60px;
+  width: 70px;
+}
