@@ -74,20 +74,6 @@
     height: 600px;
 }
 
-#aislePriceSearch{
-    font-size:22px;    
-}
-
-#aislePriceSearch button{
-    text-align:center;
-    margin-left: auto;
-    margin-right:auto;
-    border:1px solid blue ;
-    border-radius:10px;
-    background-color:#fff;
-    font-weight:bold;
-    
-}
 
 
 #aisleTable tr td{
@@ -117,6 +103,28 @@
     max-height:200px;
     max-width:200px;
 }
+
+footer ul li{
+    float: left;
+    list-style: none;
+}
+
+footer ul li a{
+    position:relative;
+    text-decoration: none;
+    color:#000;
+    margin-right: 10px;
+    font-size: 20px;
+    top:80px;
+    left:636px;
+    
+    
+}
+
+footer ul li :hover{
+    text-decoration: underline;
+}
+
 
 #HomeHeader{
   align-content: right;
