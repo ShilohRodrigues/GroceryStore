@@ -112,12 +112,16 @@
 #aisleTable tr td p{
     padding-left: 15px;
     font-size:15px;
+    font-weight: bold;
     
 }
 
-.modalButton{
-    
+.itemPrice{
+    font-size:20px;
+    padding-left:15px;
 }
+
+
 
 .modalBackground{
     position:fixed;
@@ -233,7 +237,10 @@ footer ul li :hover{
 .modalActive{
     visibility:visible;
     opacity:1;
+    
 }
+
+
 /* End of aisle css */
 
 #HomeHeader{

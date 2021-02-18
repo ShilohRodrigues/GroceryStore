@@ -1,0 +1,67 @@
+/* Style page for product properties template */
+
+
+#aisleContainer{
+    margin-top: 70px;
+    margin-left:70px;
+}
+
+#aisleBody{
+    height: 1300px;
+}
+
+.productImgProp{
+    max-height: 400px;
+    max-width: 400px;
+    border:1px solid #000;
+    border-radius: 15px;
+  
+}
+
+.propOptions{
+    position:relative;
+    left:400px;
+    bottom:330px;
+    margin-left: 200px;
+    width: 400px;
+    list-style-type: none;
+   
+    
+}
+
+.productName{
+    text-transform: uppercase; 
+}
+
+.propOptions input{
+    width:30px;
+    height: 20px;
+    border:none;
+    background-color:cornsilk;
+   
+    
+}
+
+.addCart{
+    border:none;
+    background: inherit;
+    font-weight: bold;
+    height:25px;
+    width: 200px;
+    background-color:darkgoldenrod;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.addCart:hover{
+    cursor:pointer;
+}
+
+.itemDescription{
+    margin-top: 100px;
+    position:relative;
+    bottom:300px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight:lighter;
+}
