@@ -1,13 +1,10 @@
 #Header{
-  margin: auto;
   align-content: center;
-  width:1103px;
   height: 60px;
   padding-bottom:60px;
   border-bottom: 1px solid #A9A9A9;
   background-color:#fff;  
 }
-
 
 #Nav ul {
   list-style: none;
@@ -18,6 +15,7 @@
 #Nav ul li{
   float:right;
 }
+
 #Nav ul li:hover{
   text-decoration:underline;
 }
@@ -46,11 +44,75 @@
   transform: rotate(45deg);
 }
 
-
 .Logo{
   position:relative;
   top:35px;
   max-height:80px;
   max-width: 150px;
 }
+
+#checkoutBody {
+  margin:auto;
+  width:1100px;
+}
+
+#rightDiv {
+  float:right;
+  border-style: solid;
+  border-width: thin;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+#rightDiv h2 {
+  margin-top: 0px;
+}
+
+#rightDiv p {
+  text-align: right;
+}
+
+#placeOrder {
+  padding: 5px 35px;
+  font-size: 15px;
+}
+
+#leftDiv {
+  text-align: center;
+  float: left;
+}
+
+#leftDiv h1 {
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+#leftDiv table {
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+#leftDiv table tr th {
+  padding: 20px 40px;
+  border-bottom-style: solid;
+}
+
+#leftDiv table tr td {
+  padding: 15px 40px;
+  margin: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.remove_btn {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.quantity_tb {
+  max-width: 40px;
+  font-size: 20px;
+}
+
+
 
