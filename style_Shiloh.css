@@ -1,6 +1,10 @@
+/* CSS for header */
+
 #Header{
   align-content: center;
   height: 60px;
+  width:1100px;
+  margin:auto;
   padding-bottom:60px;
   border-bottom: 1px solid #A9A9A9;
   background-color:#fff;  
@@ -48,8 +52,12 @@
   position:relative;
   top:35px;
   max-height:80px;
-  max-width: 150px;
+  max-width: 200px;
 }
+
+/* End of CSS for header */
+
+/* CSS for Checkout Page */
 
 #checkoutBody {
   margin:auto;
@@ -114,5 +122,56 @@
   font-size: 20px;
 }
 
+/* End of CSS for Checkout Page */
 
 
+/* CSS for Home Page*/
+
+#HomeBody {
+  margin:auto;
+  width:1100px;
+}
+
+.FullLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  width: 60%;
+}
+
+.SearchBar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 60%;
+  background: #fff;
+  height: 30px;
+  border-radius: 40px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.SearchBtn {
+  color: #fff;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar_tb {
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  width: 90%;
+}
