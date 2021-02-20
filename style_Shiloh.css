@@ -132,19 +132,28 @@
   width:1100px;
 }
 
+.topdiv {
+  background-color: #ecede6;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d2d4cb;
+}
+
 .FullLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 90px;
-  width: 60%;
+  width: 40%;
 }
 
 .SearchBar {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 60%;
+  width: 40%;
   background: #fff;
   height: 30px;
   border-radius: 40px;
@@ -174,4 +183,73 @@
   font-size: 16px;
   line-height: 30px;
   width: 90%;
+}
+
+.fruitsdiv {
+  background-color: #ecede6;
+  float:left;
+  margin-top: 20px;
+  margin-right: 3.6%;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d2d4cb;
+  width: 48%;
+}
+
+.fruitsveg_img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.fruitsdiv a {
+  color: black;
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.fruitsdiv a:hover {
+  color: #83df4a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.meatdiv {
+  background-color: #ecede6;
+  float:left;
+  margin-top: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d2d4cb;
+  width: 48%;
+}
+
+.meatdiv_img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.meatdiv a {
+  color: black;
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.meatdiv a:hover {
+  color: #ed1c23;
+  text-decoration: none;
+  font-size: 14px;
 }
