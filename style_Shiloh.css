@@ -256,8 +256,15 @@
 
 /* End of CSS for Home Page */
 
-/* CSS for Produce Page*/
+/* CSS for Aisle Page*/
 #ProduceBody {
+  margin:auto;
+  width:1100px;
+  font-family:'Helvetica';
+  line-height:16px;
+}
+
+#MeatsBody {
   margin:auto;
   width:1100px;
   font-family:'Helvetica';
