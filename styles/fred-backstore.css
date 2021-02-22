@@ -104,33 +104,39 @@ h1 {
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 6px;
+    vertical-align: middle;
 }
 
 .edit:hover {
     background-color: rgba(231, 231, 231, 0.932);
 }
 
-.delete {
-    float: center;
-    border: 1px solid black;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-radius: 6px;
-    background-color: white;
-    font-size: 16px;
+.remove {
+    float: right;
+    max-height: 38px;
+    max-width: 38px;
 }
 
-.delete:hover {
+.remove:hover {
     background-color: rgba(231, 231, 231, 0.932);
 }
 
-.delete:active {
-    font-size: 15px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 1px;
+#save {
+    float: right;
+    margin-top: 10px;
+    margin-right: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
     padding-bottom: 2px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#save:hover {
+    background-color: rgba(231, 231, 231, 0.932);
 }
