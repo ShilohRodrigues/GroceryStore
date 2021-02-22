@@ -1,0 +1,136 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: Arial;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid grey;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+header img {
+    height: 100%;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+    width: 70%;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    float: right;
+    padding-right: 5%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+
+header nav ul li:hover {
+    font-size: 21px;
+}
+
+h1 {
+    float: left;
+}
+
+#add {
+    float: right;
+    margin-top: 40px;
+    margin-right: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#add:hover {
+    background-color: rgba(231, 231, 231, 0.932);
+}
+
+#orders {
+    width: 100%;
+    border: 1px solid lightgrey;
+    background-color: rgba(231, 231, 231, 0.932);
+}
+
+#orders tr {
+    text-align: center;
+}
+
+#orders tr th {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 19px;
+}
+
+.row {
+    background-color: white;
+    font-size: 17px;
+}
+
+.row td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.edit {
+    float: center;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 6px;
+}
+
+.edit:hover {
+    background-color: rgba(231, 231, 231, 0.932);
+}
+
+.delete {
+    float: center;
+    border: 1px solid black;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.delete:hover {
+    background-color: rgba(231, 231, 231, 0.932);
+}
+
+.delete:active {
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
