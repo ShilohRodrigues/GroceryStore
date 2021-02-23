@@ -1,0 +1,200 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for header */
+
+#aisleHeader{
+  align-content: center;
+  width:vh(horizontal screen view);
+  height: 60px;
+  padding-bottom:60px;
+  border-bottom: 1px solid #A9A9A9;
+  background-color:#fff;
+}
+
+#aisleNav ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+#aisleNav ul li{
+  float:right;
+}
+#aisleNav ul li:hover{
+  text-decoration:underline;
+}
+
+#aisleNav ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  color:#000;
+  padding-left:12px;
+  padding-right:12px;
+  
+} 
+
+.dropdown .productsBtn{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  background-color: inherit;
+   
+}
+
+.arrow{
+  margin-bottom: 2px;
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
+  display:inline-block;
+  padding:2px;    
+  transform: rotate(45deg);
+
+}
+
+
+.aisleLogo{
+  position:relative;
+  top:35px;
+  max-height:80px;
+  max-width: 150px;
+}
+
+/* End of CSS for header */
+
+/* CSS for Aisle Page*/
+.faizan-ailes-body {
+  margin: auto;
+  width: 1150px;
+  line-height: 15px;
+}
+
+.product-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:200px;
+  max-width:200px;
+}
+
+#product-table {
+  margin-top: 90px;
+}
+
+#product-table tr {
+  height:320px;
+  width:240px;
+  box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1); 
+  display:inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#product-table tr:hover{
+  box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.3); 
+  cursor:pointer;
+}
+
+#product-table td {
+  display:block;
+  margin-top: 20px;
+}
+
+#product-table td a {
+  text-decoration: none;
+  color:black;
+}
+
+.item-name {
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+.price {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+/*End of CSS for aisle pages */
+
+/*CSS for login page*/
+
+
+#grocery-ailes-img{
+  width: 1000px;
+  height: 700px;
+  border: 1px solid #fff;
+  margin-top: 0px;
+  position: relative;
+  background-image: url(images/grocery-ailes-login.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-position: center center;
+}
+
+#login-info{
+  position: fixed;
+  float: inline-block;
+  top: 250px;
+  right: 200px;
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+  background: coral;
+  color: black;
+  box-sizing: border-box;
+  
+}
+
+#login-button{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%
+}
+#forgot-button{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+
+/*End of CSS for login page*/
+
+/*CSS for product list page*/
+
+#edit-body {
+  margin:auto;
+  width:1100px;
+}
+
+#left-div {
+  text-align: center;
+  float: left;
+}
+
+#left-div h1 {
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+#left-div table {
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+#left-div table tr th {
+  padding: 20px 40px;
+  border-bottom-style: solid;
+}
+
+#left-div table tr td {
+  padding: 15px 40px;
+  margin: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+/*End of CSS for aisle pages */
