@@ -315,6 +315,11 @@
   margin-top: 20px;
 }
 
+#ProductTable td a {
+  text-decoration: none;
+  color:black;
+}
+
 .item_name {
   padding-left: 15px;
   font-size:15px;
