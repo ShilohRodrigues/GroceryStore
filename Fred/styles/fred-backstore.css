@@ -94,23 +94,6 @@ h1 {
     padding-bottom: 3px;
 }
 
-.edit {
-    float: center;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-radius: 6px;
-    vertical-align: middle;
-}
-
-.edit:hover {
-    background-color: rgba(231, 231, 231, 0.932);
-}
-
 .remove {
     float: right;
     max-height: 38px;
@@ -118,6 +101,33 @@ h1 {
 }
 
 .remove:hover {
+    background-color: rgba(231, 231, 231, 0.932);
+}
+
+.edit-button {
+    float: right;
+    max-height: 21px;
+    max-width: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-button:hover {
+    background-color: rgba(231, 231, 231, 0.932); 
+}
+
+.edit {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit img {
+    height: 21px;
+    width: 21px;
+}
+
+.edit:hover {
     background-color: rgba(231, 231, 231, 0.932);
 }
 
