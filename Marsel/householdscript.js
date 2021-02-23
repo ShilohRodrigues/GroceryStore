@@ -1,6 +1,5 @@
-/*eslint-env browser*/
 
-var products = [
+const products = [
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/71IdKRlm8%2BL._AC_SL1417_.jpg",
         name: "48 Pack AA High-Performance Alkaline Batteries",
@@ -108,45 +107,38 @@ var products = [
     }
     
 ];
-var product = document.querySelectorAll('.item');
-var modalbg = document.querySelector('.modalBackground');
-var closebtn = document.querySelector('.modalCloseButton');
-var modal = document.querySelectorAll('.modal');
+const product = document.querySelectorAll('.item');
+const modalbg = document.querySelector('.modalBackground');
+const closebtn = document.querySelector('.modalCloseButton');
+const modal = document.querySelectorAll('.modal');
 
 
-for (var i=0;i<product.length;i++){
+for (let i = 0; i<product.length; i++){
 product[i].addEventListener('click', function () {
     modalbg.classList.add('modalActive');
 });
 }
 closebtn.addEventListener('click', function () {
     modalbg.classList.remove('modalActive');
-})
+});
 
 
-for ( i=0;i<product.length;i++){
+for (let i=0; i<product.length; i++){
     product[i].getElementsByClassName("productImg")[0].src = products[i].image;
     product[i].getElementsByTagName("p")[0].innerHTML = products[i].name;
-    product[i].getElementsByClassName("itemPrice")[0].innerHTML = products[i].price;
-    
+    product[i].getElementsByClassName("itemPrice")[0].innerHTML = products[i].price;   
 }
 
-/* this part of code does not work. Its purpose is to change modal box content to the content assiociated with clicked item*/
-for (i=0;i<product.length;i++){
-    product[i].addEventListener('click', function () {
-    for (i=0;i<product.length;i++){
+
+
+
+for (let i = 0; i<product.length; i++){
+    product[i].addEventListener('click', function(){
         modal[0].getElementsByClassName("modalImg")[0].src = products[i].image;
-
         modal[0].getElementsByClassName("modalItemName")[0].innerHTML = products[i].name;
-
         modal[0].getElementsByClassName("modalItemPrice")[0].innerHTML = products[i].price;
-
         modal[0].getElementsByClassName("modalItemDesc")[0].innerHTML = products[i].description; 
-    }
-    
 });
 }
-
-    
 
 
