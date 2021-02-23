@@ -185,7 +185,7 @@
   width: 90%;
 }
 
-.fruitsdiv {
+.leftdiv {
   background-color: #ecede6;
   float:left;
   margin-top: 20px;
@@ -196,7 +196,7 @@
   width: 48%;
 }
 
-.fruitsveg_img {
+.main_img {
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
@@ -205,7 +205,7 @@
   width: 90%;
 }
 
-.fruitsdiv a {
+.leftdiv a {
   color: black;
   text-align: right;
   float: right;
@@ -214,13 +214,13 @@
   margin-right: 10px;
 }
 
-.fruitsdiv a:hover {
+.leftdiv a:hover {
   color: #83df4a;
   text-decoration: none;
   font-size: 14px;
 }
 
-.meatdiv {
+.rightdiv {
   background-color: #ecede6;
   float:left;
   margin-top: 20px;
@@ -230,7 +230,7 @@
   width: 48%;
 }
 
-.meatdiv_img {
+.main_img {
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
@@ -239,7 +239,7 @@
   width: 90%;
 }
 
-.meatdiv a {
+.rightdiv a {
   color: black;
   text-align: right;
   float: right;
@@ -248,8 +248,8 @@
   margin-right: 10px;
 }
 
-.meatdiv a:hover {
-  color: #ed1c23;
+.rightdiv a:hover {
+  color: #83df4a;
   text-decoration: none;
   font-size: 14px;
 }
