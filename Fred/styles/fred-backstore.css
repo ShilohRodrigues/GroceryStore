@@ -89,16 +89,83 @@ header nav ul li:hover {
     h1 {
         font-size: 25px;
         margin-bottom: 5px;
+        margin-top: 30px;
+        float: left;
     }
 
     #orders tr th {
         padding-bottom: 5px;
         padding-top: 5px;
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .row {
-        font-size: 13px;
+        font-size: 11px;
+    }
+
+    .row td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .remove {
+        float: right;
+        max-height: 20px;
+        max-width: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .remove:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    .edit-button {
+        float: right;
+        max-height: 21px;
+        max-width: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit-button:hover {
+        background-color: rgba(231, 231, 231, 0.932); 
+    }
+    
+    .edit {
+        float: right;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .edit img {
+        height: 15px;
+        width: 15px;
+    }
+    
+    .edit:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    #save {
+        float: right;
+        margin-top: 10px;
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #save:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+
+    #add {
+        margin-bottom: 10px;
+        font-size: 16px;
     }
 }
 
@@ -125,25 +192,89 @@ header nav ul li:hover {
     header nav ul li:hover {
         font-size: 19px;
     }
-    
+
     h1 {
-        font-size: 30px;
-        margin-bottom: 5px;
+        font-size: 25px;
+        float: left;
+        margin-top: 30px;
     }
 
     #orders tr th {
-        padding-bottom: 5px;
-        padding-top: 5px;
-        font-size: 15px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-size: 17px;
     }
 
     .row {
         font-size: 14px;
     }
+
+    .row td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .remove {
+        float: right;
+        max-height: 38px;
+        max-width: 38px;
+    }
+    
+    .remove:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    .edit-button {
+        float: right;
+        max-height: 21px;
+        max-width: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit-button:hover {
+        background-color: rgba(231, 231, 231, 0.932); 
+    }
+    
+    .edit {
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit img {
+        height: 21px;
+        width: 21px;
+    }
+    
+    .edit:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    #save {
+        float: right;
+        margin-top: 10px;
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #save:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+
+    #add {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) { /* Tablet portrait */   
-      
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* Tablet portrait */  
+
     body {
         margin-left: 5%;
         margin-right: 5%;
@@ -167,18 +298,81 @@ header nav ul li:hover {
     }
 
     h1 {
-        font-size: 35px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        float: left;
     }
 
     #orders tr th {
-        padding-bottom: 5px;
-        padding-top: 5px;
-        font-size: 17px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-size: 19px;
+        margin-top: 10px;
     }
 
     .row {
-        font-size: 15px;
+        font-size: 17px;
+    }
+
+    .row td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .remove {
+        float: right;
+        max-height: 38px;
+        max-width: 38px;
+    }
+    
+    .remove:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    .edit-button {
+        float: right;
+        max-height: 21px;
+        max-width: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit-button:hover {
+        background-color: rgba(231, 231, 231, 0.932); 
+    }
+    
+    .edit {
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit img {
+        height: 21px;
+        width: 21px;
+    }
+    
+    .edit:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    #save {
+        float: right;
+        margin-top: 10px;
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #save:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+
+    #add {
+        margin-bottom: 10px;
     }
 }
 
@@ -207,19 +401,101 @@ header nav ul li:hover {
     }
 
     h1 {
+        font-size: 34px;
         float: left;
-        font-size: 30px;
-        margin-bottom: 0px;
     }
 
     #orders tr th {
-        padding-bottom: 6px;
-        padding-top: 6px;
-        font-size: 18px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-size: 19px;
     }
 
     .row {
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    .row td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .remove {
+        float: right;
+        max-height: 38px;
+        max-width: 38px;
+    }
+    
+    .remove:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    .edit-button {
+        float: right;
+        max-height: 21px;
+        max-width: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit-button:hover {
+        background-color: rgba(231, 231, 231, 0.932); 
+    }
+    
+    .edit {
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit img {
+        height: 21px;
+        width: 21px;
+    }
+    
+    .edit:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    #save {
+        float: right;
+        margin-top: 10px;
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #save:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) { /* Browser */    
+    
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header {
+        height: 70px;
+        margin-bottom: 55px;
+    }
+
+    header nav {
+        margin-top: 35px;
+    }
+
+    header nav ul li {
+        font-size: 22px;
+    }
+
+    header nav ul li:hover {
+        font-size: 23px;
     }
 }
 
@@ -260,6 +536,64 @@ header nav ul li:hover {
 
     .row {
         font-size: 17px;
+    }
+
+    .row td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .remove {
+        float: right;
+        max-height: 38px;
+        max-width: 38px;
+    }
+    
+    .remove:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    .edit-button {
+        float: right;
+        max-height: 21px;
+        max-width: 21px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit-button:hover {
+        background-color: rgba(231, 231, 231, 0.932); 
+    }
+    
+    .edit {
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .edit img {
+        height: 21px;
+        width: 21px;
+    }
+    
+    .edit:hover {
+        background-color: rgba(231, 231, 231, 0.932);
+    }
+    
+    #save {
+        float: right;
+        margin-top: 10px;
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    #save:hover {
+        background-color: rgba(231, 231, 231, 0.932);
     }
 }
 
