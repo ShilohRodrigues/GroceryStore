@@ -32,11 +32,15 @@ header nav ul li a {
     color: black;
 }
 
+#product-table {
+    width: 100%;
+}
+
 #product-table tr {
     width: 100%;
 }
 
-.product-cell {
+#product-cell {
     width: 29%;
     padding-left: 2%;
     padding-right: 2%;
@@ -44,23 +48,23 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.product-img {
+#product-img {
     width: 100%;
 }
 
-.product-company {
+#product-company {
     margin-bottom: 0;
     color: grey;
     margin-left: 3px;
 }
     
-.product-name {
+#product-name {
     margin-top: 2px;
     margin-left: 2px;
     margin-bottom: 0;
 }
     
-.product-price {
+#product-price {
     margin-top: 5px;
     font-weight: bold;
     margin-left: 2px;
@@ -96,16 +100,16 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    .product-company {
-        font-size: 85%;
+    #product-company {
+        font-size: 70%;
     }
     
-    .product-name {
-        font-size: 85%;
+    #product-name {
+        font-size: 70%;
     }
     
-    .product-price {
-        font-size: 90%;
+    #product-price {
+        font-size: 80%;
         margin-bottom: 1px;
     }
 }
@@ -143,15 +147,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    .product-company {
+    #product-company {
         font-size: 100%;
     }
     
-    .product-name {
+    #product-name {
         font-size: 100%;
     }
     
-    .product-price {
+    #product-price {
         font-size: 100%;
         margin-bottom: 3px;
     }
@@ -190,15 +194,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    .product-company {
+    #product-company {
         font-size: 110%;
     }
     
-    .product-name {
+    #product-name {
         font-size: 110%;
     }
     
-    .product-price {
+    #product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }    
@@ -247,15 +251,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    .product-company {
+    #product-company {
         font-size: 110%;
     }
     
-    .product-name {
+    #product-name {
         font-size: 110%;
     }
     
-    .product-price {
+    #product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }
@@ -304,15 +308,15 @@ header nav ul li a {
         border-spacing: 15px;
     }
 
-    .product-company {
+    #product-company {
         font-size: 110%;
     }
     
-    .product-name {
+    #product-name {
         font-size: 110%;
     }
     
-    .product-price {
+    #product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }
@@ -363,15 +367,15 @@ header nav ul li a {
         border-spacing: 20px;
     }
 
-    .product-company {
+    #product-company {
         font-size: 110%;
     }
     
-    .product-name {
+    #product-name {
         font-size: 110%;
     }
     
-    .product-price {
+    #product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }

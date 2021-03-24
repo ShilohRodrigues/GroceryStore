@@ -6,10 +6,9 @@
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel='stylesheet' href='styles/fred-aisle.css'>
-        <script type='text/javascript' href='scripts/dairyinfo.js'>
-        </script>
+        <script type='text/javascript' src='scripts/dairyinfo.js'></script>
     </head>
-    <body>
+    <body onload="makeTable()">
         <header>
             <a href='../index.html'><img src='images/logo-small.png' alt='Logo'/></a>
             <nav>
@@ -23,12 +22,13 @@
         </header>
         <div id='left'>
             <h1 id="title">Dairy Products</h1>
-        </div>
+        </div> 
         <div id='right'>
-            <table id='product-table' onload='makeTable()'>
+            <table id='product-table'>
+                <!--
                 <tr>
                     <td class='product-cell'>
-                        <img class='product-img' src='images/milk1.jpg'></a>
+                        <img class='product-img' src='images/milk1.jpg'>
                         <p class='product-company'>Natrel</p>
                         <p class='product-name'>1% Fine Filtered Milk</p>
                         <p class='product-price'>$5.19</p>
@@ -86,7 +86,18 @@
                         <p class='product-price'>$4.79</p>
                     </td>
                 </tr>
+                -->
             </table>
+            <a href='' onclick="makeTable()">Hi</a>
+
+            <template id='celltemplate'>
+                <td id='product-cell'>
+                    <img id='product-img' src=''>
+                    <p id='product-company'></p>
+                    <p id='product-name'></p>
+                    <p id='product-price'></p>
+                </td>
+            </template>
         <div/>
     </body>
 </html>
