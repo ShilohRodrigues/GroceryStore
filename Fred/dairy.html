@@ -6,9 +6,10 @@
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel='stylesheet' href='styles/fred-aisle.css'>
-        <script type='text/javascript' src='scripts/dairyinfo.js'></script>
+        <script type='text/javascript' src='scripts/productinfo.js'></script>
     </head>
-    <body onload="makeTable()">
+    <body onload="makeDairyTable()">
+
         <header>
             <a href='../index.html'><img src='images/logo-small.png' alt='Logo'/></a>
             <nav>
@@ -20,76 +21,15 @@
                 </ul>
             </nav>
         </header>
+        
         <div id='left'>
             <h1 id="title">Dairy Products</h1>
         </div> 
-        <div id='right'>
-            <table id='product-table'>
-                <!--
-                <tr>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/milk1.jpg'>
-                        <p class='product-company'>Natrel</p>
-                        <p class='product-name'>1% Fine Filtered Milk</p>
-                        <p class='product-price'>$5.19</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/milk2.jpg'>
-                        <p class='product-company'>Natrel</p>
-                        <p class='product-name'>2% Fine Filtered Milk</p>
-                        <p class='product-price'>$5.19</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/milk3.jpg'>
-                        <p class='product-company'>Natrel</p>
-                        <p class='product-name'>3.25% Fine Filtered Milk</p>
-                        <p class='product-price'>$5.19</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/yogurt.jpg'>
-                        <p class='product-company'>Activia</p>
-                        <p class='product-name'>Stirred Vanilla Yogurt</p>
-                        <p class='product-price'>$4.29</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/yogurt-pack.jpg'>
-                        <p class='product-company'>Yoplait</p>
-                        <p class='product-name'>Creamy Duo Assorted Yogurt</p>
-                        <p class='product-price'>$5.99</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/kraft-singles.jpg'>
-                        <p class='product-company'>Kraft</p>
-                        <p class='product-name'>Singles Regular 22 Pack</p>
-                        <p class='product-price'>$5.79</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/cream-cheese.jpg'>
-                        <p class='product-company'>Philadelphia</p>
-                        <p class='product-name'>Soft Original Cream Cheese</p>
-                        <p class='product-price'>$5.99</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/grated-cheese.jpg'>
-                        <p class='product-company'>Saputo</p>
-                        <p class='product-name'>Grated Quattro Fromaggi</p>
-                        <p class='product-price'>$18.99</p>
-                    </td>
-                    <td class='product-cell'>
-                        <img class='product-img' src='images/whipped-cream.jpg'>
-                        <p class='product-company'>Québon</p>
-                        <p class='product-name'>20% Aerosol Whipped Cream</p>
-                        <p class='product-price'>$4.79</p>
-                    </td>
-                </tr>
-                -->
-            </table>
-            <a href='' onclick="makeTable()">Hi</a>
 
+        <div id='right'>
+            <table id='product-table'></table>
+
+            <!-- Template for product display cell. -->
             <template id='celltemplate'>
                 <td id='product-cell'>
                     <img id='product-img' src=''>
@@ -98,6 +38,7 @@
                     <p id='product-price'></p>
                 </td>
             </template>
+
         <div/>
     </body>
 </html>

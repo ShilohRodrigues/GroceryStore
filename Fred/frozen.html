@@ -4,9 +4,12 @@
     <head>
         <title>Frozen Aisle</title>
         <meta charset='utf-8'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel='stylesheet' href='styles/fred-aisle.css'>
+        <script type='text/javascript' src='scripts/productinfo.js'></script>
     </head>
-    <body>
+    <body onload="makeFrozenTable()">
+
         <header>
             <a href='../index.html'><img src='images/logo-small.png' alt='Logo'/></a>
             <nav>
@@ -18,74 +21,24 @@
                 </ul>
             </nav>
         </header>
+
         <div id='left'>
-            <h1>Frozen Products</h1>
+            <h1 id="title">Frozen Products</h1>
         </div>
+
         <div id='right'>
-            <table id='product-table'>
-                <tbody>
-                    <tr>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/raspberry.jpg'>
-                            <p class='product-company'>Compliments</p>
-                            <p class='product-name'>Whole Raspberries Frozen Fruit</p>
-                            <p class='product-price'>$4.79</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/pizza.jpg'>
-                            <p class='product-company'>Mikes</p>
-                            <p class='product-name'>All-Dressed Frozen Pizza</p>
-                            <p class='product-price'>$7.99</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/juice.jpg'>
-                            <p class='product-company'>Minute Maid</p>
-                            <p class='product-name'>Fruit Punch Frozen Beverages</p>
-                            <p class='product-price'>$1.09</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/pasta.jpg'>
-                            <p class='product-company'>Michelina's</p>
-                            <p class='product-name'>Penne Pollo Frozen Entree</p>
-                            <p class='product-price'>$2.69</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/turkey.jpg'>
-                            <p class='product-company'>Swanson</p>
-                            <p class='product-name'>Turkey Frozen Dinner</p>
-                            <p class='product-price'>$4.19</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/steak.jpg'>
-                            <p class='product-company'>Hungry Man</p>
-                            <p class='product-name'>Salisbury Steak Frozen Entree</p>
-                            <p class='product-price'>$5.29</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/minipizza.jpg'>
-                            <p class='product-company'>Plats Du Chef</p>
-                            <p class='product-name'>Pepperoni Frozen Pizzettas</p>
-                            <p class='product-price'>$3.79</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/broccoli.jpg'>
-                            <p class='product-company'>Green Organic</p>
-                            <p class='product-name'>Broccoli Frozen Vegetables</p>
-                            <p class='product-price'>$4.99</p>
-                        </td>
-                        <td class='product-cell'>
-                            <img class='product-img' src='images/icecream.jpg'>
-                            <p class='product-company'>Nestle</p>
-                            <p class='product-name'>Parlour Vanilla Frozen Dessert</p>
-                            <p class='product-price'>$3.99</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <table id='product-table'></table>
+
+            <!-- Template for product display cell. -->
+            <template id='celltemplate'>
+                <td id='product-cell'>
+                    <img id='product-img' src=''>
+                    <p id='product-company'></p>
+                    <p id='product-name'></p>
+                    <p id='product-price'></p>
+                </td>
+            </template>
+
         <div/>
     </body>
 </html>
