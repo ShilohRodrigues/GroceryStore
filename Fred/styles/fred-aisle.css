@@ -89,6 +89,122 @@ header nav ul li a {
     float: right;
 }
 
+.modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.modal-left {
+    float: left;
+    width: 44%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.modal-img {
+    height: 80%;
+    margin-top: 10%;
+}
+
+.modal-exit {
+    border-style: hidden;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.modal-exit:hover {
+    color: grey;
+}
+
+.modal-exit:active {
+    color: black;
+}
+
+.modal-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.modal-name {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.modal-company {
+    color: grey;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.modal-description {
+    text-align: center;
+}
+
+.modal-price {
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.cart {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.decrease {
+    color: black;
+    border-style: hidden;
+    background-color: white;
+    font-weight: bold;
+}
+
+.decrease:hover {
+    color: grey;
+}
+
+.decrease:active {
+    color: black;
+}
+
+.increase {
+    color: black;
+    border-style: hidden;
+    background-color: white;
+    font-weight: bold;
+}
+
+.increase:hover {
+    color: grey;
+}
+
+.increase:active {
+    color: black;
+}
+
+.add {
+    background-color: black;
+    color: white;
+}
+
+.amount {
+    text-align: center;
+    width: 25px;
+    border: 0px;
+}
 
 @media screen and (max-width: 479px) { /* Mobile portrait */
     
@@ -103,15 +219,19 @@ header nav ul li a {
     }
 
     header nav {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     header nav ul li {
+        font-size: 15px;
+    }
+
+    header nav ul li:hover {
         font-size: 16px;
     }
 
     #left h1 {
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 5px;
     }
 
@@ -128,8 +248,81 @@ header nav ul li a {
     }
     
     .product-price {
-        font-size: 80%;
-        margin-bottom: 1px;
+        font-size: 70%;
+        margin-bottom: 3px;
+    }
+
+    .modal-box {
+        margin-left: -150px;
+        margin-top: -200px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .modal-left {
+        width: 300px;
+        height: 200px;
+        margin-left: 25%;
+        float: none;
+    }
+
+    .modal-right {
+        width: 100%;
+        float: right;
+    }
+    
+    .modal-name {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-right: 20%;
+    }
+
+    .modal-company {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .modal-exit {
+        float: right;
+        margin-top: -200px;
+    }
+
+    .modal-description {
+        margin-right: 10%;
+        margin-top: 2%;
+        font-size: 13px;
+    }
+
+    .modal-price {
+        margin-top: 3%;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    .cart {
+        margin-left: 5%;
+    }
+
+    .decrease {
+        font-size: 15px;
+    }
+
+    .increase {
+        font-size: 15px;
+    }
+
+    .add {
+        font-size: 13px;
+        border-radius: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .amount {
+        font-size: 15px;
     }
 }
 
@@ -167,16 +360,71 @@ header nav ul li a {
     }
 
     .product-company {
-        font-size: 100%;
+        font-size: 85%;
     }
     
     .product-name {
-        font-size: 100%;
+        font-size: 85%;
     }
     
     .product-price {
-        font-size: 100%;
+        font-size: 85%;
         margin-bottom: 3px;
+    }
+
+    .modal-box {
+        margin-left: -225px;
+        margin-top: -100px;
+        width: 450px;
+        height: 200px;
+    }
+
+    .modal-name {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .modal-company {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .modal-description {
+        margin-right: 10%;
+        margin-top: 3%;
+        font-size: 13px;
+    }
+
+    .modal-price {
+        margin-top: 5%;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    .cart {
+        margin-left: 5%;
+    }
+
+    .decrease {
+        font-size: 15px;
+    }
+
+    .increase {
+        font-size: 15px;
+    }
+
+    .add {
+        font-size: 13px;
+        border-radius: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .amount {
+        font-size: 15px;
     }
 }
 
@@ -224,7 +472,63 @@ header nav ul li a {
     .product-price {
         font-size: 110%;
         margin-bottom: 4px;
-    }    
+    }
+    
+    .modal-box {
+        margin-left: -350px;
+        margin-top: -175px;
+        width: 700px;
+        height: 350px;
+    }
+
+    .modal-name {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .modal-company {
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+    .modal-description {
+        margin-left: 5%;
+        margin-right: 20%;
+        margin-top: 8%;
+        font-size: 18px;
+    }
+
+    .modal-price {
+        margin-top: 10%;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .cart {
+        margin-left: 20%;
+    }
+
+    .decrease {
+        font-size: 20px;
+    }
+
+    .increase {
+        font-size: 20px;
+    }
+
+    .add {
+        font-size: 15px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 30px;
+    }
+
+    .amount {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) { /* Tablet landscape + browser */   
@@ -282,6 +586,62 @@ header nav ul li a {
         font-size: 110%;
         margin-bottom: 4px;
     }
+
+    .modal-box {
+        margin-left: -350px;
+        margin-top: -175px;
+        width: 700px;
+        height: 350px;
+    }
+
+    .modal-name {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .modal-company {
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+    .modal-description {
+        margin-left: 5%;
+        margin-right: 20%;
+        margin-top: 8%;
+        font-size: 18px;
+    }
+
+    .modal-price {
+        margin-top: 10%;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .cart {
+        margin-left: 20%;
+    }
+
+    .decrease {
+        font-size: 20px;
+    }
+
+    .increase {
+        font-size: 20px;
+    }
+
+    .add {
+        font-size: 15px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 30px;
+    }
+
+    .amount {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) { /* Browser */    
@@ -338,6 +698,62 @@ header nav ul li a {
     .product-price {
         font-size: 110%;
         margin-bottom: 4px;
+    }
+
+    .modal-box {
+        margin-left: -350px;
+        margin-top: -175px;
+        width: 700px;
+        height: 350px;
+    }
+
+    .modal-name {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .modal-company {
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+    .modal-description {
+        margin-left: 5%;
+        margin-right: 20%;
+        margin-top: 8%;
+        font-size: 18px;
+    }
+
+    .modal-price {
+        margin-top: 10%;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .cart {
+        margin-left: 20%;
+    }
+
+    .decrease {
+        font-size: 20px;
+    }
+
+    .increase {
+        font-size: 20px;
+    }
+
+    .add {
+        font-size: 15px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 30px;
+    }
+
+    .amount {
+        font-size: 18px;
     }
 }
 
@@ -400,69 +816,18 @@ header nav ul li a {
     }
 
     .modal-box {
-        position: fixed;
-        left: 50%;
-        top: 50%;
         margin-left: -350px;
         margin-top: -175px;
         width: 700px;
         height: 350px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        visibility: hidden;
-    }
-    
-    .modal-left {
-        float: left;
-        width: 44%;
-        height: 100%;
-        border-right: 1px solid black;
-    }
-
-    .modal-img {
-        height: 80%;
-        margin-top: 10%;
-    }
-
-    .modal-exit {
-        border-style: hidden;
-        background-color: white;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 4px;
-    }
-
-    .modal-exit:hover {
-        color: grey;
-    }
-
-    .modal-exit:active {
-        color: black;
-    }
-
-    .modal-right {
-        float: right;
-        width: 50%;
-        height: 100%;
-        padding-left: 5%;
     }
 
     .modal-name {
-        border-bottom: 1px solid black;
-        padding-bottom: 2px;
-        margin-top: 50px;
-        margin-left: 5%;
-        margin-right: 20%;
         font-size: 25px;
-        text-align: center;
-        margin-bottom: 0px;
+        margin-top: 50px;
     }
 
     .modal-company {
-        color: grey;
-        text-align: right;
-        margin-right: 20%;
         font-size: 18px;
         margin-top: 2px;
     }
@@ -472,63 +837,28 @@ header nav ul li a {
         margin-right: 20%;
         margin-top: 8%;
         font-size: 18px;
-        text-align: center;
     }
 
     .modal-price {
         margin-top: 10%;
         font-size: 20px;
-        margin-left: 5%;
         margin-bottom: 10%;
-        font-weight: bold;
     }
 
     .cart {
-        display: inline-block;
         margin-left: 20%;
-        border: 1px solid black;
-        padding: 2px;
-        border-radius: 3px;
     }
 
     .decrease {
-        color: black;
-        border-style: hidden;
-        background-color: white;
         font-size: 20px;
-        font-weight: bold;
-        border-radius: 4px;
-    }
-
-    .decrease:hover {
-        color: grey;
-    }
-
-    .decrease:active {
-        color: black;
     }
 
     .increase {
-        color: black;
-        border-style: hidden;
-        background-color: white;
         font-size: 20px;
-        font-weight: bold;
-        border-radius: 4px;
-    }
-
-    .increase:hover {
-        color: grey;
-    }
-
-    .increase:active {
-        color: black;
     }
 
     .add {
         font-size: 15px;
-        background-color: black;
-        color: white;
         border-radius: 15px;
         padding-left: 10px;
         padding-right: 10px;
@@ -538,9 +868,6 @@ header nav ul li a {
     }
 
     .amount {
-        text-align: center;
-        width: 25px;
-        border: 0px;
         font-size: 18px;
     }
 }

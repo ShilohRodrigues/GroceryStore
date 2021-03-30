@@ -179,6 +179,8 @@ function makeTable(aisle) {
 }
 
 function setListeners() {
+
+    // Makes product info popup appear on click of a product cell.
     let items = document.querySelectorAll(".product-cell");
     for (let i = 0; i < items.length; i++) {
         items[i].addEventListener("click", function() {
@@ -186,6 +188,7 @@ function setListeners() {
         });
     }
 
+    // Closes product info popup on click of "x".
     let modalItems = document.getElementsByClassName("modal-exit");
     for (let i = 0; i < modalItems.length; i++) {
         modalItems[i].addEventListener("click", function() {
@@ -193,15 +196,22 @@ function setListeners() {
         })
     }
 
+    // Sets the modification to quantity and add to cart in popup.
     let decrease = document.getElementsByClassName("decrease"),
         value = document.getElementsByClassName("amount"),
-        increase = document.getElementsByClassName("increase");
+        increase = document.getElementsByClassName("increase"),
+        addCart = document.getElementsByClassName("add");
     for (let i = 0; i < value.length; i++) {
-        decrease[i].addEventListener("click", function() {
-            value[i].value--;
+        decrease[i].addEventListener("click", function() { // Decrease amount by 1.
+            if (value[i].value > 0) {
+                value[i].value--;
+            }
         })
-        increase[i].addEventListener("click", function() {
+        increase[i].addEventListener("click", function() { // Increase amount by 1.
             value[i].value++;
+        })
+        addCart[i].addEventListener("click", function() {
+            document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
         })
     }
 }
