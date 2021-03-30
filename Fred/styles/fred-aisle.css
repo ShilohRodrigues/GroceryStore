@@ -399,7 +399,7 @@ header nav ul li a {
         margin-bottom: 4px;
     }
 
-    #modal-box {
+    .modal-box {
         position: fixed;
         left: 50%;
         top: 50%;
@@ -410,12 +410,14 @@ header nav ul li a {
         background-color: white;
         border: 1px solid black;
         border-radius: 5px;
+        visibility: hidden;
     }
     
     .modal-left {
         float: left;
-        width: 45%;
+        width: 44%;
         height: 100%;
+        border-right: 1px solid black;
     }
 
     .modal-img {
@@ -441,13 +443,14 @@ header nav ul li a {
 
     .modal-right {
         float: right;
-        width: 55%;
+        width: 50%;
         height: 100%;
+        padding-left: 5%;
     }
 
     .modal-name {
         border-bottom: 1px solid black;
-        padding-bottom: 5px;
+        padding-bottom: 2px;
         margin-top: 50px;
         margin-left: 5%;
         margin-right: 20%;
@@ -467,20 +470,63 @@ header nav ul li a {
     .modal-description {
         margin-left: 5%;
         margin-right: 20%;
-        margin-top: 5%;
-        font-size: 20px;
+        margin-top: 8%;
+        font-size: 18px;
+        text-align: center;
     }
 
     .modal-price {
-        margin-top: 15%;
+        margin-top: 10%;
         font-size: 20px;
         margin-left: 5%;
-        margin-bottom: 40px;
+        margin-bottom: 10%;
         font-weight: bold;
     }
 
-    .modal-info {
-        font-size: 18px;
+    .cart {
+        display: inline-block;
+        margin-left: 20%;
+        border: 1px solid black;
+        padding: 2px;
+        border-radius: 3px;
+    }
+
+    .decrease {
+        color: black;
+        border-style: hidden;
+        background-color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .decrease:hover {
+        color: grey;
+    }
+
+    .decrease:active {
+        color: black;
+    }
+
+    .increase {
+        color: black;
+        border-style: hidden;
+        background-color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .increase:hover {
+        color: grey;
+    }
+
+    .increase:active {
+        color: black;
+    }
+
+    .add {
+        font-size: 15px;
         background-color: black;
         color: white;
         border-radius: 15px;
@@ -488,7 +534,13 @@ header nav ul li a {
         padding-right: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
-        text-decoration: none;
-        margin-left: 30%;
+        margin-left: 30px;
+    }
+
+    .amount {
+        text-align: center;
+        width: 25px;
+        border: 0px;
+        font-size: 18px;
     }
 }

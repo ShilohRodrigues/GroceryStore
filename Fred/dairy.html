@@ -42,17 +42,23 @@
         </div>
 
         <template id='modal'>
-            <div id='modal-box'>
+            <div class='modal-box'>
                 <div class='modal-left'>
-                    <img class='modal-img' src='images/milk1.jpg'>
+                    <img class='modal-img' src=''>
                 </div>
                 <div class='modal-right'>
                     <button type='button' class='modal-exit'>X</button>
-                    <p class='modal-name'>Name</p>
-                    <p class='modal-company'>Company</p>
-                    <p class='modal-description'>Description</p>
-                    <p class='modal-price'>$0.00</p>
-                    <a class='modal-info' href=''>More info</a>
+                    <p class='modal-name'></p>
+                    <p class='modal-company'></p>
+                    <p class='modal-description'></p>
+                    <p class='modal-price'></p>
+                    <!-- <a class='modal-info' href=''>More info</a> -->
+                    <div class='cart'>
+                        <button type='button' class='decrease'>-</button>
+                        <input type='text' value='0' class='amount'>
+                        <button type='button' class='increase'>+</button>
+                        <button type='button' class='add'>Add to cart</button>
+                    </div>
                 </div>
             </div>
         </template>

@@ -4,72 +4,63 @@ const dairy = [
         company: "Natrel",
         name: "1% Fine Filtered Milk",
         price: "$5.19",
-        description: "1% finely filtered milk for a pure taste.",
-        info: ""
+        description: "1% finely filtered milk for a pure taste."
     },
     {
         image: "images/milk2.jpg",
         company: "Natrel",
         name: "2% Fine Filtered Milk",
         price: "$5.19",
-        description: "2% finely filtered milk for a pure taste.",
-        info: ""
+        description: "2% finely filtered milk for a pure taste."
     },
     {
         image: "images/milk3.jpg",
         company: "Natrel",
         name: "3.25% Fine Filtered Milk",
         price: "$5.19",
-        description: "3.25% finely filtered milk for a pure taste.",
-        info: ""
+        description: "3.25% finely filtered milk for a pure taste."
     },
     {
         image: "images/yogurt.jpg",
         company: "Activia",
         name: "Stirred Vanilla Yogurt",
         price: "$4.29",
-        description: "Vanilla yogurt, stirred for a creamier texture.",
-        info: ""
+        description: "Vanilla yogurt, stirred for a creamier texture."
     },
     {
         image: "images/yogurt-pack.jpg",
         company: "Yoplait",
         name: "Creamy Duo Assorted Yogurt",
         price: "$5.99",
-        description: "",
-        info: ""
+        description: "Extra creamy yogurt containing two different flavors."
     },
     {
         image: "images/kraft-singles.jpg",
         company: "Kraft",
         name: "Singles Regular 22 Pack",
         price: "$5.79",
-        description: "",
-        info: ""
+        description: "Individually packaged slices of cheddar cheese."
     },
     {
         image: "images/cream-cheese.jpg",
         company: "Philadelphia",
         name: "Soft Original Cream Cheese",
         price: "$5.99",
-        description: "",
-        info: ""
+        description: "Original cream cheese without artificial flavors or colors."
     },
     {
         image: "images/grated-cheese.jpg",
         company: "Saputo",
         name: "Grated Quattro Fromaggi",
         price: "$18.99",
-        description: "",
-        info: ""
+        description: "Contains four types of cheese grated and mixed together."
     },
     {
         image: "images/whipped-cream.jpg",
         company: "Québon",
         name: "20% Aerosol Whipped Cream",
         price: "$4.79",
-        description: "",
-        info: ""
+        description: "Whipped cream dispensed by an aerosol canister."
     }
 ];
 
@@ -79,72 +70,63 @@ const frozen = [
         company: "Compliments",
         name: "Whole Raspberries Frozen Fruit",
         price: "4.79",
-        description: "",
-        info: ""
+        description: "Frozen whole raspberries in a bag."
     },
     {
         image: "images/pizza.jpg",
         company: "Mikes",
         name: "All-Dressed Frozen Pizza",
         price: "$7.99",
-        description: "",
-        info: ""
+        description: "Oven baked frozen all-dressed pizza."
     },
     {
         image: "images/juice.jpg",
         company: "Minute Maid",
         name: "Fruit Punch Frozen Beverages",
         price: "$1.09",
-        description: "",
-        info: ""
+        description: "Frozen concentrated fruit punch juice base."
     },
     {
         image: "images/pasta.jpg",
         company: "Michelina's",
         name: "Penne Pollo Frozen Entree",
         price: "$2.69",
-        description: "",
-        info: ""
+        description: "Penne pollo microwaveable frozen dinner"
     },
     {
         image: "images/turkey.jpg",
         company: "Swanson",
         name: "Turkey Frozen Dinner",
         price: "$4.19",
-        description: "",
-        info: ""
+        description: "Turkey microwaveable frozen dinner."
     },
     {
         image: "images/steak.jpg",
         company: "Hungry Man",
         name: "Salisbury Steak Frozen Entree",
         price: "$5.29",
-        description: "",
-        info: ""
+        description: "Steak microwaveable frozen dinner."
     },
     {
         image: "images/minipizza.jpg",
         company: "Plats Du Chef",
         name: "Pepperoni Frozen Pizzettas",
         price: "$3.79",
-        description: "",
-        info: ""
+        description: "Oven baked frozen pepperoni pizzettas."
     },
     {
         image: "images/broccoli.jpg",
         company: "Green Organic",
         name: "Broccoli Frozen Vegetables",
         price: "$4.99",
-        description: "",
-        info: ""
+        description: "Frozen broccoli flowers in a bag."
     },
     {
         image: "images/icecream.jpg",
         company: "Nestle",
         name: "Parlour Vanilla Frozen Dessert",
         price: "$3.99",
-        description: "",
-        info: ""
+        description: "Tub of vanilla ize cream."
     }
 ];
 
@@ -160,10 +142,11 @@ function makeTable(aisle) {
         products = frozen;
     }
 
-    let row = table.insertRow(0);
+    let rowCounter = 0,
+        row = table.insertRow(rowCounter++);
     for (i in products) {
         if (i % 3 == 0 && i != 0) {
-            row = table.insertRow(0);
+            row = table.insertRow(rowCounter++);
         }
 
         // Get references to tags.
@@ -182,7 +165,7 @@ function makeTable(aisle) {
             modalInfo = newModal.children[1].children[5];
             
         image.src = imageModal.src = products[i].image;
-        company.textContent = companyModal.textcontent = products[i].company;
+        company.textContent = companyModal.textContent = products[i].company;
         name.textContent = nameModal.textContent = products[i].name;
         price.textContent = modalPrice.textContent = products[i].price;
         description.textContent = products[i].description;
@@ -197,28 +180,28 @@ function makeTable(aisle) {
 
 function setListeners() {
     let items = document.querySelectorAll(".product-cell");
-    let modalItems = document.querySelectorAll(".modal-box");
     for (let i = 0; i < items.length; i++) {
         items[i].addEventListener("click", function() {
-
+            document.getElementsByClassName("modal-box")[i].style.visibility = 'visible';
         });
     }
-}
 
-function infoBox(e) {
-    document.getElementById("title").innerHTML = e;
-    /*
-    let table = document.getElementById("product-table"),
-        targ = window.event.target,
-        c = 0;
-    document.getElementById("title").innerHTML = targ.price;
-    for (let i in table.rows) {
-        let row = table.rows[i];
-        for (let j in rows.cells) {
-            let col = row.cells[j];
-            if (col.name === targ.name) {
-                document.getElementById("title").innerHTML = col.price.textContent;
-            }
-        }
-    }*/
+    let modalItems = document.getElementsByClassName("modal-exit");
+    for (let i = 0; i < modalItems.length; i++) {
+        modalItems[i].addEventListener("click", function() {
+            document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
+        })
+    }
+
+    let decrease = document.getElementsByClassName("decrease"),
+        value = document.getElementsByClassName("amount"),
+        increase = document.getElementsByClassName("increase");
+    for (let i = 0; i < value.length; i++) {
+        decrease[i].addEventListener("click", function() {
+            value[i].value--;
+        })
+        increase[i].addEventListener("click", function() {
+            value[i].value++;
+        })
+    }
 }
