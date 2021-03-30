@@ -40,7 +40,7 @@ header nav ul li a {
     width: 100%;
 }
 
-#product-cell {
+.product-cell {
     width: 29%;
     padding-left: 2%;
     padding-right: 2%;
@@ -48,26 +48,45 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-#product-img {
+.product-cell:hover {
+    border-width: 2px;
+}
+
+.product-img {
     width: 100%;
 }
 
-#product-company {
+.product-company {
     margin-bottom: 0;
     color: grey;
     margin-left: 3px;
 }
     
-#product-name {
+.product-name {
     margin-top: 2px;
     margin-left: 2px;
     margin-bottom: 0;
 }
     
-#product-price {
+.product-price {
     margin-top: 5px;
     font-weight: bold;
     margin-left: 2px;
+}
+
+#cell-click {
+    text-decoration: none;
+    color: black;
+}
+
+#modal {
+    display: none;
+    width: 50%;
+    color: blue;
+}
+
+.modal-exit {
+    float: right;
 }
 
 
@@ -100,15 +119,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 70%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 70%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 80%;
         margin-bottom: 1px;
     }
@@ -147,15 +166,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 100%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 100%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 100%;
         margin-bottom: 3px;
     }
@@ -194,15 +213,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 110%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 110%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }    
@@ -251,15 +270,15 @@ header nav ul li a {
         border-spacing: 10px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 110%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 110%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }
@@ -308,15 +327,15 @@ header nav ul li a {
         border-spacing: 15px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 110%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 110%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 110%;
         margin-bottom: 4px;
     }
@@ -367,16 +386,109 @@ header nav ul li a {
         border-spacing: 20px;
     }
 
-    #product-company {
+    .product-company {
         font-size: 110%;
     }
     
-    #product-name {
+    .product-name {
         font-size: 110%;
     }
     
-    #product-price {
+    .product-price {
         font-size: 110%;
         margin-bottom: 4px;
+    }
+
+    #modal-box {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -350px;
+        margin-top: -175px;
+        width: 700px;
+        height: 350px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .modal-left {
+        float: left;
+        width: 45%;
+        height: 100%;
+    }
+
+    .modal-img {
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    .modal-exit {
+        border-style: hidden;
+        background-color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .modal-exit:hover {
+        color: grey;
+    }
+
+    .modal-exit:active {
+        color: black;
+    }
+
+    .modal-right {
+        float: right;
+        width: 55%;
+        height: 100%;
+    }
+
+    .modal-name {
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 20%;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .modal-company {
+        color: grey;
+        text-align: right;
+        margin-right: 20%;
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+    .modal-description {
+        margin-left: 5%;
+        margin-right: 20%;
+        margin-top: 5%;
+        font-size: 20px;
+    }
+
+    .modal-price {
+        margin-top: 15%;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .modal-info {
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        margin-left: 30%;
     }
 }

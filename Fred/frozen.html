@@ -8,7 +8,7 @@
         <link rel='stylesheet' href='styles/fred-aisle.css'>
         <script type='text/javascript' src='scripts/productinfo.js'></script>
     </head>
-    <body onload="makeFrozenTable()">
+    <body onload="makeTable('frozen')">
 
         <header>
             <a href='../index.html'><img src='images/logo-small.png' alt='Logo'/></a>
@@ -30,12 +30,12 @@
             <table id='product-table'></table>
 
             <!-- Template for product display cell. -->
-            <template id='celltemplate'>
-                <td id='product-cell'>
-                    <img id='product-img' src=''>
-                    <p id='product-company'></p>
-                    <p id='product-name'></p>
-                    <p id='product-price'></p>
+            <template id='cell-template'>
+                <td class='product-cell'>
+                    <img class='product-img' src=''>
+                    <p class='product-company'></p>
+                    <p class='product-name'></p>
+                    <p class='product-price'></p>
                 </td>
             </template>
 
