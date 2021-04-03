@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head id="CheckoutHead">
+  <meta charset = "utf-8">
+  <meta name = "Description" content = "Page #4, Checkout">
+  <meta name = "Author" content = "Shiloh Rodrigues"> 
+  <meta name="keywords" content="grocery, food, store">
+  <title> TBD-GROCERY </title>    
+  <link rel="stylesheet" href="/Shiloh/style_Shiloh.css">
+</head>
+  
+<header id="Header">
+  <a href=""><img class="Logo" src=/MiniLogo.png></a>
+  <nav id="Nav">
+    <ul>
+      <li> <a href="Checkout.html" >Cart </a> </li>
+      <li> <a href="" >Account</a> </li>
+      <div class="dropdown"> 
+      <li><a> <button  class="productsBtn" onclick="function">Products  <i class="arrow"> </i> </button> </a> </li>
+      </div>
+      <li> <a href="/index.html" >Home </a> </li>
+    </ul>
+  </nav>
+</header>
+  
+<body id="checkoutBody">
+  <div id="leftDiv">
+    <h1>My Cart</h1>
+    <table class="productTable">
+      <tr>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+        <th>Remove</th>
+      </tr>
+      <tr>
+    </table>
+  </div>
+  
+  <div id="rightDiv">
+    <h2>Cart Summary</h2>
+    <p>Total before tax: $</p>
+    <p>QST: $</p>
+    <p>GST: $</p>
+    <p><u><b>Total:</b> $</u></p>
+    <button type="button" id="placeOrder"><b>Place Order</b></button>
+  </div>
+  
+</body>
+    <script src= scripts/cart.js></script>
+</html>
