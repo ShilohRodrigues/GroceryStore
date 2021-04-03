@@ -156,6 +156,13 @@ header nav ul li a {
 .modal-price {
     font-weight: bold;
     margin-left: 5%;
+    margin-top: 2px;
+}
+
+.modal-price-total {
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: 0px;
 }
 
 .cart {
@@ -163,6 +170,7 @@ header nav ul li a {
     border: 1px solid black;
     border-radius: 3px;
     padding: 2px;
+    margin-top: 0px;
 }
 
 .decrease {
@@ -294,9 +302,13 @@ header nav ul li a {
     }
 
     .modal-price {
-        margin-top: 3%;
+        margin-top: 2%;
         font-size: 15px;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
+    }
+
+    .modal-price-total {
+        font-size: 12px;
     }
 
     .cart {
@@ -398,7 +410,11 @@ header nav ul li a {
     .modal-price {
         margin-top: 5%;
         font-size: 15px;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
+    }
+
+    .modal-price-total {
+        font-size: 12px;
     }
 
     .cart {
@@ -501,7 +517,11 @@ header nav ul li a {
     .modal-price {
         margin-top: 10%;
         font-size: 20px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+    }
+
+    .modal-price-total {
+        font-size: 17px;
     }
 
     .cart {
@@ -614,7 +634,11 @@ header nav ul li a {
     .modal-price {
         margin-top: 10%;
         font-size: 20px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+    }
+
+    .modal-price-total {
+        font-size: 17px;
     }
 
     .cart {
@@ -727,7 +751,11 @@ header nav ul li a {
     .modal-price {
         margin-top: 10%;
         font-size: 20px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+    }
+
+    .modal-price-total {
+        font-size: 17px;
     }
 
     .cart {
@@ -842,11 +870,17 @@ header nav ul li a {
     .modal-price {
         margin-top: 10%;
         font-size: 20px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+    }
+
+    .modal-price-total {
+        font-size: 17px;
+        margin-top: 5px;
     }
 
     .cart {
         margin-left: 20%;
+        margin-bottom: 0px;
     }
 
     .decrease {

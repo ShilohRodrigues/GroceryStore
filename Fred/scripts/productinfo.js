@@ -69,7 +69,7 @@ const frozen = [
         image: "images/raspberry.jpg",
         company: "Compliments",
         name: "Whole Raspberries Frozen Fruit",
-        price: "4.79",
+        price: "$4.79",
         description: "Frozen whole raspberries in a bag."
     },
     {
@@ -162,7 +162,8 @@ function makeTable(aisle) {
             companyModal = newModal.children[1].children[2],
             description = newModal.children[1].children[3],
             modalPrice = newModal.children[1].children[4],
-            modalInfo = newModal.children[1].children[5];
+            modalInfo = newModal.children[1].children[5],
+            modalTotal = newModal.children[1].children[6];
             
         image.src = imageModal.src = products[i].image;
         company.textContent = companyModal.textContent = products[i].company;
@@ -170,6 +171,8 @@ function makeTable(aisle) {
         price.textContent = modalPrice.textContent = products[i].price;
         description.textContent = products[i].description;
         modalInfo.href = products[i].info;
+        modalTotal.textContent = "Total value: $0";
+
 
         document.body.appendChild(newModal);
 
@@ -202,14 +205,19 @@ function setListeners() {
         value = document.getElementsByClassName("amount"),
         increase = document.getElementsByClassName("increase"),
         addCart = document.getElementsByClassName("add");
+        total = document.getElementsByClassName("modal-price-total");
     for (let i = 0; i < value.length; i++) {
         decrease[i].addEventListener("click", function() { // Decrease amount by 1.
             if (value[i].value > 0) {
                 value[i].value--;
+                let pricetot = value[i].value * parseFloat(products[i].price.substring(1));
+                total[i].innerHTML = "Total value: $"  + pricetot.toFixed(2);
             }
         })
         increase[i].addEventListener("click", function() { // Increase amount by 1.
             value[i].value++;
+            let pricetot = value[i].value * parseFloat(products[i].price.substring(1));
+            total[i].innerHTML = "Total value: $"  + pricetot.toFixed(2);
         })
         addCart[i].addEventListener("click", function() {
             document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
