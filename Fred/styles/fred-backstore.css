@@ -36,7 +36,7 @@ header nav ul li:hover {
     font-size: 21px;
 }
 
-#add {
+#add, #adder {
     float: right;
     margin-top: 40px;
     margin-right: 2%;
@@ -52,18 +52,81 @@ header nav ul li:hover {
     font-weight: bold;
 }
 
-#orders {
+#orders, #products {
     width: 100%;
     border: 1px solid lightgrey;
     background-color: rgba(231, 231, 231, 0.932);
 }
     
-#orders tr {
+#orders tr, #products tr {
     text-align: center;
 }
 
-.row {
+.row, .prow {
     background-color: white;
+}
+
+.bedit {
+    background-color: white;
+    border: none;
+}
+
+.bedit:hover {
+    background-color: lightgrey;
+}
+
+#save {
+    float: right;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 2%;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.decrease {
+    color: black;
+    border-style: hidden;
+    background-color: white;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.decrease:hover {
+    color: grey;
+}
+
+.decrease:active {
+    color: black;
+}
+
+.increase {
+    color: black;
+    border-style: hidden;
+    background-color: white;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.increase:hover {
+    color: grey;
+}
+
+.increase:active {
+    color: black;
+}
+
+.amount {
+    text-align: center;
+    width: 25px;
+    border: 0px;
 }
 
 @media screen and (max-width: 479px) { /* Mobile portrait */
@@ -93,32 +156,32 @@ header nav ul li:hover {
         float: left;
     }
 
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 5px;
         padding-top: 5px;
         font-size: 11px;
     }
 
-    .row {
+    .row, .prow {
         font-size: 11px;
     }
 
-    .row td {
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
     
     .remove {
         float: right;
-        max-height: 20px;
-        max-width: 20px;
+        max-height: 27px;
+        max-width: 27px;
         padding-left: 2px;
         padding-right: 2px;
     }
 
     .remove img {
-        height: 15px;
-        width: 15px;
+        height: 25px;
+        width: 25px;
     }
     
     .remove:hover {
@@ -137,13 +200,13 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
         padding-left: 2px;
         padding-right: 2px;
     }
     
-    .edit img {
+    .edit img, .bedit img {
         height: 15px;
         width: 15px;
     }
@@ -154,6 +217,7 @@ header nav ul li:hover {
     
     #save {
         float: right;
+        font-size: 12px;
         margin-top: 10px;
         margin-right: 2%;
         text-decoration: none;
@@ -168,7 +232,7 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932);
     }
 
-    #add {
+    #add, #adder {
         margin-bottom: 10px;
         font-size: 16px;
     }
@@ -204,25 +268,26 @@ header nav ul li:hover {
         margin-top: 30px;
     }
 
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 7px;
         padding-top: 7px;
-        font-size: 17px;
-    }
-
-    .row {
         font-size: 14px;
     }
 
-    .row td {
+    .row, .prow {
+        font-size: 12px;
+    }
+
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
     
     .remove {
         float: right;
-        max-height: 38px;
-        max-width: 38px;
+        max-height: 35px;
+        max-width: 35px;
+        
     }
     
     .remove:hover {
@@ -231,25 +296,24 @@ header nav ul li:hover {
     
     .edit-button {
         float: right;
-        max-height: 21px;
-        max-width: 21px;
-        padding-left: 10px;
-        padding-right: 10px;
+        max-height: 20px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
     
     .edit-button:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
-    .edit img {
-        height: 21px;
-        width: 21px;
+    .edit img, .bedit img {
+        height: 19px;
+        width: 19px;
     }
     
     .edit:hover {
@@ -272,7 +336,7 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932);
     }
 
-    #add {
+    #add, #adder {
         margin-bottom: 10px;
         font-size: 18px;
     }
@@ -307,18 +371,18 @@ header nav ul li:hover {
         float: left;
     }
 
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 7px;
         padding-top: 7px;
         font-size: 19px;
         margin-top: 10px;
     }
 
-    .row {
+    .row, .prow {
         font-size: 17px;
     }
 
-    .row td {
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
@@ -345,13 +409,13 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .edit img {
+    .edit img, .bedit img {
         height: 21px;
         width: 21px;
     }
@@ -376,7 +440,7 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932);
     }
 
-    #add {
+    #add, #adder {
         margin-bottom: 10px;
     }
 }
@@ -410,17 +474,17 @@ header nav ul li:hover {
         float: left;
     }
 
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 7px;
         padding-top: 7px;
         font-size: 19px;
     }
 
-    .row {
+    .row, .prow {
         font-size: 17px;
     }
 
-    .row td {
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
@@ -447,13 +511,13 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .edit img {
+    .edit img, .bedit img {
         height: 21px;
         width: 21px;
     }
@@ -502,48 +566,23 @@ header nav ul li:hover {
     header nav ul li:hover {
         font-size: 23px;
     }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1599px) { /* Browser */    
-    
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    header {
-        height: 70px;
-        margin-bottom: 55px;
-    }
-
-    header nav {
-        margin-top: 35px;
-    }
-
-    header nav ul li {
-        font-size: 22px;
-    }
-
-    header nav ul li:hover {
-        font-size: 23px;
-    }
 
     h1 {
         font-size: 34px;
         float: left;
     }
 
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 7px;
         padding-top: 7px;
         font-size: 19px;
     }
 
-    .row {
+    .row, .prow {
         font-size: 17px;
     }
 
-    .row td {
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
@@ -570,13 +609,13 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .edit img {
+    .edit img, .bedit img {
         height: 21px;
         width: 21px;
     }
@@ -631,18 +670,18 @@ header nav ul li:hover {
         float: left;
     }
     
-    #orders tr th {
+    #orders tr th, #products tr th {
         padding-bottom: 7px;
         padding-top: 7px;
         font-size: 19px;
     }
 
-    .row {
+    .row, .prow {
         background-color: white;
         font-size: 17px;
     }
     
-    .row td {
+    .row td, .prow td {
         padding-top: 3px;
         padding-bottom: 3px;
     }
@@ -669,13 +708,13 @@ header nav ul li:hover {
         background-color: rgba(231, 231, 231, 0.932); 
     }
     
-    .edit {
+    .edit, .bedit {
         float: right;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .edit img {
+    .edit img, .bedit img {
         height: 21px;
         width: 21px;
     }
@@ -686,10 +725,14 @@ header nav ul li:hover {
     
     #save {
         float: right;
+        font-weight: bold;
+        font-size: 15px;
         margin-top: 10px;
         margin-right: 2%;
         text-decoration: none;
         color: black;
+        border: 1px solid black;
+        border-radius: 5px;
         padding-left: 8px;
         padding-right: 8px;
         padding-top: 2px;

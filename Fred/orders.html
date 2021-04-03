@@ -5,6 +5,7 @@
         <title>Orders</title>
         <meta charset='utf-8'/>
         <link rel='stylesheet' href='styles/fred-backstore.css'>
+        <script type='text/javascript' src='scripts/orders.js'></script>
     </head>
     <body>
         <header>
@@ -18,8 +19,8 @@
                 </ul>
             </nav>
         </header>
-        <h1>Order List</h1>
-        <a id='add' href='orders-manage.html'>New Order</a>
+        <h1 id='title'>Order List</h1>
+        <button type='button' id='add'>New Order</button>
         <div>
             <table id='orders'> 
                 <tr>
@@ -29,57 +30,21 @@
                     <th>User</th>
                     <th></th>
                 </tr>
-                <tr class='row'>
-                    <td>6574312</td>
-                    <td>02/04/21</td>
-                    <td>02/06/21</td>
-                    <td>User1</td>
-                    <td>
-                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
-                    </td>
-                </tr>
-                <tr class='row'>
-                    <td>1456876</td>
-                    <td>02/05/21</td>
-                    <td>02/06/21</td>
-                    <td>User1</td>
-                    <td>
-                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
-                    </td>
-                </tr>
-                <tr class='row'>
-                    <td>7465754</td>
-                    <td>02/03/21</td>
-                    <td>02/06/21</td>
-                    <td>User1</td>
-                    <td>
-                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
-                    </td>
-                </tr>
-                <tr class='row'>
-                    <td>1245654</td>
-                    <td>02/05/21</td>
-                    <td>02/06/21</td>
-                    <td>User1</td>
-                    <td>
-                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
-                    </td>
-                </tr>
-                <tr class='row'>
-                    <td>7657489</td>
-                    <td>01/31/21</td>
-                    <td>02/06/21</td>
-                    <td>User1</td>
-                    <td>
-                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
-                    </td>
-                </tr>
             </table>
+
+            <template id='order-template'>
+                <tr class='row'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input class='remove' type='image' src='images/trashicon.png' name='remove' />
+                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
+                    </td>
+                </tr>
+            </template>
+            
         </div>
     </body>
 </html>

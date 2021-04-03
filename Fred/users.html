@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- frozen.html - An aisle page for frozen products -->
+<!-- users.html - A page for user list -->
 <html lang='en'>
     <head>
-        <title>Manage Orders</title>
+        <title>Orders</title>
         <meta charset='utf-8'/>
         <link rel='stylesheet' href='styles/fred-backstore.css'>
-        <script type='text/javascript' src='scripts/orders-manage.js'></script>
+        <script type='text/javascript' src='scripts/users.js'></script>
     </head>
     <body>
         <header>
@@ -19,39 +19,31 @@
                 </ul>
             </nav>
         </header>
-        <h1 id='titles'>Order details</h1>
-        <button type='button' id='add'>Add Product</button>
+        <h1 id='title'>User List</h1>
+        <button type='button' id='add'>New User</button>
         <div>
-            <table id='products'> 
+            <table id='orders'> 
                 <tr>
-                    <th>Product ID</th>
-                    <th>Product name</th>
-                    <th>Quantity</th>
-                    <th>User</th>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Join Date</th>
                     <th></th>
                 </tr>
             </table>
 
-            <template id='product-template'>
-                <tr class='prow'>
+            <template id='user-template'>
+                <tr class='row'>
                     <td></td>
                     <td></td>
-                    <td>
-                        <button type='button' class='decrease'>-</button>
-                        <input type='text' value='0' class='amount'>
-                        <button type='button' class='increase'>+</button>
-                    </td>
+                    <td></td>
                     <td></td>
                     <td>
                         <input class='remove' type='image' src='images/trashicon.png' name='remove' />
-                        <button type='button' class='bedit'><img src='images/edit.png' alt='edit'></a>
+                        <a class='edit' href='orders-manage.html'><img src='images/edit.png' alt='edit'></a>
                     </td>
                 </tr>
             </template>
-
-        </div>
-        <div>
-            <button type='button' id='save'>Save</button>
+            
         </div>
     </body>
 </html>

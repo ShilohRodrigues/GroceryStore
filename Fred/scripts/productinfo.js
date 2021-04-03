@@ -193,6 +193,7 @@ function setListeners() {
     for (let i = 0; i < modalItems.length; i++) {
         modalItems[i].addEventListener("click", function() {
             document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
+            value[i].value = 0;
         })
     }
 
@@ -212,6 +213,7 @@ function setListeners() {
         })
         addCart[i].addEventListener("click", function() {
             document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
+            value[i].value = 0;
         })
     }
 }
