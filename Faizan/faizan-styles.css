@@ -40,7 +40,6 @@
   border:none;
   outline:none;
   background-color: inherit;
-   
 }
 
 .arrow{
@@ -143,7 +142,7 @@
   padding: 10px;
   border-radius: 15px;
   width: 200px;
-  background: coral;
+  background: rgb(254, 216, 177);
   color: black;
   box-sizing: border-box;
   

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head id="aisleHead">
+        <meta charset="utf-8">
+        <title> Backstore | GroceryStore</title>
+        <meta name="description" content="login-page">
+        <link rel="stylesheet" href="editProductPage.css">
+    </head>
+
+    <header id="aisleHeader">
+        <a href=""><img class="aisleLogo" src=images/TemporaryLogo.jpg></a>
+            <nav id="aisleNav">
+                <ul>
+                    <li> <a href="" >Orders </a> </li>
+                    <li> <a href="" >Users</a> </li>
+                    <div class="dropdown"> <!-- complete dropdown list with javascript on A2:: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click --> 
+                    <li><a> <button  class="productsBtn" onclick="function">Products  </button> </a> </li>
+                    </div>
+                    <li> <a href="" >Home </a> </li>
+                </ul>
+            </nav>
+    </header>
+
+    <body>
+        <div class="center">
+            <br>
+            Edit products
+            <br>
+        </div>
+        <div class="editProduct">
+            <div class="generalButton" style="width: 50%">
+                <div class="inner-generalButton">
+                    <a href=""><img src="images/orange add.png"> Add</a>
+                </div>
+                <div class="inner-generalButton">
+                    <a href=""><img src="images/orange edit.png"> Edit</a>
+                </div>
+                <div class="inner-generalButton">
+                    <a><img src="images/orange delete.png"> Delete</a>
+                </div>
+            </div>
+            
+            <table class="productTable">
+                <tr class="productTableHead">
+                    <th>Item #</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>000 001</td>
+                        <td><img style="max-width: 90px" src="images/pepsi.png" /></td>
+                        <td>Pepsi</td>
+                        <td>75</td>
+                        <th><input type="radio" name="select" value="select"></th>
+                    </tr>
+                    <tr>
+                        <td>000 002</td>
+                        <td><img style="max-width: 90px" src="images/cola.jpg" /></td>
+                        <td>Coca cola</td>
+                        <td>80</td>
+                        <th><input type="radio" name="select" value="select"></th>
+                    </tr>
+                    <tr>
+                        <td>000 002</td>
+                        <td><img style="max-width: 90px" src="images/sprite.jpg" /></td>
+                        <td>Sprite</td>
+                        <td>90</td>
+                        <th><input type="radio" name="select" value="select"></th>
+                    </tr>
+                </tbody>
+            </table>          
+
+        </div>
+    </body>
+</html>
