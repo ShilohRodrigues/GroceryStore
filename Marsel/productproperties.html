@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <title> TBD-GROCERY </title>
 <meta name="description" content="Page #2, aisle">
-<link rel="stylesheet" href="aislestyle.css">
-<link rel="stylesheet" href="styleproductproperties.css">
+<link rel="stylesheet" href="styles/aislestyle.css">
+<link rel="stylesheet" href="styles/styleproductproperties.css">
 </head>
 <header id="aisleHeader">
     <a href=""><img class="aisleLogo" src=/MiniLogo.png></a>
         <nav id="aisleNav">
             <ul>
-                <li> <a href="" >Cart </a> </li>
+                <li> <a class='checkout' href="/Marsel/Checkout.html" >Cart </a> </li>
                 <li> <a href="" >Account</a> </li>
                 <div class="dropdown"> <! -- complete dropdown list with javascript on A2:: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click --> 
                 <li><a href="aisle.html"> <button  class="productsBtn" onclick="function">Products  <i class="arrow"> </i> </button> </a> </li>
                 </div>
-                <li> <a href="index.html" >Home </a> </li>
+                <li> <a href="/index.html" >Home </a> </li>
             </ul>
         </nav>
 </header>
@@ -28,20 +28,8 @@
             <article id="aisleContent">
                 <ul class="propOptions">
                     <h1 class="productName"> ITEM 1 </h1>
-                    <li><select name="propOption">
-                            <option value="1"> One </option>
-                            <option value="2"> Two </option>
-                            <option value="3"> Three </option>
-                        </select> <BR></BR>
-                    </li>
-                    <li><select name="propOption">
-                            <option value="1"> One </option>
-                            <option value="2"> Two </option>
-                            <option value="3"> Three </option>
-                        </select> <BR></BR>
-                    </li>
-                    <li><p>0.00$</p></li>
-                    <li><input type="number" name="quantity" placeholder="1"> <button class="addCart">Add To Cart</button><BR></BR></li>
+                    <li><p class = "productPrice">0.00$</p></li>
+                    <li><input class = "Quantity" type="number" name="quantity" min="1"  value='1'> <button class="addCart">Add To Cart</button><BR></BR></li>
                 </ul>
                 <div class="itemDescription">
                 <h1>Description</h1>
@@ -50,6 +38,7 @@
             </article>  
         </section>
      <footer >
+         <script src="scripts/dynamicproductpages.js"></script>
     </footer>
 </body>    
 </html>
