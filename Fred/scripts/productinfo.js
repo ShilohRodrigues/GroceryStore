@@ -262,6 +262,138 @@ const produce = [
     }
 ];
 
+const snacks = [
+    {
+        image: "images/snack/kit-kat.jpg",
+        company: "Nestle",
+        name: "Kit Kat Single Chocolate Bar",
+        price: "$1.39",
+        description: "Single kit kat chocolate bar."
+    },
+    {
+        image: "images/snack/aero.jpg",
+        company: "Nestle",
+        name: "Aero Single Chocolate Bar",
+        price: "$1.39",
+        description: "Single aero chocolate bar."
+    },
+    {
+        image: "images/snack/doritos-original.jpg",
+        company: "Doritos",
+        name: "Nacho Cheese Tortilla Chips",
+        price: "$4.29",
+        description: "Nacho cheese Doritos tortilla chips."
+    },
+    {
+        image: "images/snack/doritos-zesty.jpg",
+        company: "Doritos",
+        name: "Zesty Cheese Tortilla Chips",
+        price: "$4.29",
+        description: "Zesty cheese Doritos tortilla chips."
+    },
+    {
+        image: "images/snack/doritos-chili.jpg",
+        company: "Doritos",
+        name: "Sweet Chili Heat Tortilla Chips",
+        price: "$4.29",
+        description: "Sweet chili heat Doritos tortilla chips."
+    },
+    {
+        image: "images/snack/lays-original.jpg",
+        company: "Lay's",
+        name: "Classic Potato Chips",
+        price: "$3.29",
+        description: "Classic Lay's potato chips."
+    },
+    {
+        image: "images/snack/lays-ketchup.jpg",
+        company: "Lay's",
+        name: "Ketchup Potato Chips",
+        price: "$3.29",
+        description: "Ketchup Lay's potato chips."
+    },
+    {
+        image: "images/snack/lays-vinegar.jpg",
+        company: "Lay's",
+        name: "Salt & Vinegar Potato Chips",
+        price: "$3.29",
+        description: "Salt & vinegar Lay's potato chips."
+    },
+    {
+        image: "images/snack/lays-bbq.jpg",
+        company: "Lay's",
+        name: "BBQ Potato Chips",
+        price: "$3.29",
+        description: "Barbecue Lay's potato chips."
+    }
+]
+
+const health = [
+    {
+        image: "images/health/hand-cream.jpg",
+        company: "O'Keeffe's",
+        name: "O'Keeffe's Working Hands Cream",
+        price: "$8.97",
+        description: "Concentrated hand cream for cracked hands."
+    },
+    {
+        image: "images/health/toothbrush.jpg",
+        company: "Oral-B",
+        name: "Cavity Defense Toothbrush, Medium",
+        price: "$5.96",
+        description: "Medium stiffness toothbrush pack."
+    },
+    {
+        image: "images/health/toothpaste.jpg",
+        company: "Crest",
+        name: "Cavity Protection Toothpast Gel",
+        price: "$1.79",
+        description: "Cool mint cavity protection toothpaste gel."
+    },
+    {
+        image: "images/health/deodorant-male.jpg",
+        company: "Old Spice",
+        name: "Pure Sport High Endurance Deodorant",
+        price: "$3.47",
+        description: "Resistant deodorant for men."
+    },
+    {
+        image: "images/health/deodorant-female.jpg",
+        company: "Lady Speed Stick",
+        name: "Antipersprant Deodorant, Strawberry Splash",
+        price: "$3.97",
+        description: "Fresh infusions, strawberry splash female deodorant."
+    },
+    {
+        image: "images/health/tampax.jpg",
+        company: "Tampax",
+        name: "Super plus Absorbency Tampons",
+        price: "$7.77",
+        description: "Super plus absorbency tampons."
+    },
+    {
+        image: "images/health/shaving-cream.jpg",
+        company: "Gillette",
+        name: "Foamy Sensitive Skin Shaving Cream",
+        price: "$2.67",
+        description: "Foamy shaving cream for sensitive skin."
+    },
+    {
+        image: "images/health/razor-men.jpg",
+        company: "Gillette",
+        name: "Fusion5 ProGlide Razor",
+        price: "$9.97",
+        description: "Fusion5 ProGlide razor for men."
+    },
+    {
+        image: "images/health/razor-women.jpg",
+        company: "Gillette",
+        name: "Venus ComfortGlide White Tea Razor",
+        price: "$11.97",
+        description: "Venus ComfortGlife white tea razor for women."
+    },
+]
+
 let products = [];
 
 function makeTable(aisle) {
@@ -276,6 +408,10 @@ function makeTable(aisle) {
         products = meats;
     } else if (aisle === 'produce') {
         products = produce;
+    } else if (aisle === 'snacks') {
+        products = snacks;
+    } else if (aisle === 'health') {
+        products = health;
     }
 
     let rowCounter = 0,
