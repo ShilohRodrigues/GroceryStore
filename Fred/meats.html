@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- meats.html - An aisle page for meat products -->
+<html lang='en'>
+    <head>
+        <title>Meat Aisle</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel='stylesheet' href='styles/fred-aisle.css'>
+        <script type='text/javascript' src='scripts/productinfo.js'></script>
+    </head>
+    <body onload="makeTable('meats')">
+
+        <header>
+            <a href='../index.html'><img src='images/logo-small.png' alt='Logo'/></a>
+            <nav>
+                <ul>
+                    <li><a href=''>Cart</a></li>
+                    <li><a href=''>Account</a></li>
+                    <li><a href=''>Products</a></li>
+                    <li><a href='../index.html'>Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id='left'>
+            <h1 id="title">Meat Products</h1>
+        </div> 
+
+        <div id='right'>
+            <table id='product-table'></table>
+
+            <!-- Template for product display cell. -->
+            <template id='cell-template'>
+                <td class='product-cell'>
+                    <img class='product-img' src=''>
+                    <p class='product-company'></p>
+                    <p class='product-name'></p>
+                    <p class='product-price'></p>
+                </td>
+            </template>
+
+        </div>
+
+        <template id='modal'>
+            <div class='modal-box'>
+                <div class='modal-left'>
+                    <img class='modal-img' src=''>
+                </div>
+                <div class='modal-right'>
+                    <button type='button' class='modal-exit'>X</button>
+                    <p class='modal-name'></p>
+                    <p class='modal-company'></p>
+                    <p class='modal-description'></p>
+                    <p class='modal-price'></p>
+                    <div class='cart'>
+                        <button type='button' class='decrease'>-</button>
+                        <input type='text' value='0' class='amount'>
+                        <button type='button' class='increase'>+</button>
+                        <button type='button' class='add'>Add to cart</button>
+                    </div>
+                    <p class='modal-price-total'></p>
+                </div>
+            </div>
+        </template>
+
+    </body>
+</html>

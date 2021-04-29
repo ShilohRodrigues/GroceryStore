@@ -1,0 +1,820 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+}
+
+@media screen and (max-width: 479px) { /* Mobile portrait */
+
+    header {
+        height: 50px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 48px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -280px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 80%;
+    }
+
+    #searchBar {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+        margin-left: 15%;
+    }
+
+    #searchBar:focus {
+        outline: none;
+    }
+
+    #searchBar:focus::placeholder {
+        color: transparent;
+    }
+
+    .aisleRow {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        margin-left: 1%;
+        width: 48%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        margin-right: 1%;
+        width: 48%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) { /* Mobile landscape */
+    
+    header {
+        height: 65px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 63px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+    
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -300px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 75%;
+        margin-left: 5%;
+    }
+
+    #searchBar {
+        font-size: 15px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-left: 15%;
+    }
+
+    .aisleRow {
+        width: 100%;
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        margin-left: 1%;
+        width: 48%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        margin-right: 1%;
+        width: 48%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* Tablet portrait */
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header {
+        height: 65px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 63px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+    
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        margin-right: 5%;
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -390px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    #searchBar {
+        font-size: 17px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        margin-left: 15%;
+    }
+
+    .aisleRow {
+        width: 100%;
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) { /* Tablet landscape + browser */
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header {
+        height: 70px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 68px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+    
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -280px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 65%;
+        margin-left: 5%;
+    }
+
+    #searchBar {
+        font-size: 18px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        margin-left: 15%;
+    }
+
+    .aisleRow {
+        width: 100%;
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) { /* Browser */
+
+    body {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    header {
+        height: 65px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 63px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+    
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -280px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        margin-left: 3%;
+        margin-right: 3%;
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 5px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    #searchBar {
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        margin-left: 15%;
+    }
+
+    .aisleRow {
+        margin-left: 3%;
+        width: 94%;
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) { /* Browser */
+
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    header {
+        height: 65px;
+        border-bottom: 1px solid black;
+        padding-right: 3%;
+    }
+
+    #headerImage {
+        height: 63px;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    #headerMenu {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #headerMenu li {
+        float: right;
+        margin-right: 4%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    #headerMenu li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerMenu li a:hover {
+        text-decoration: underline;
+    }
+
+    #headerAisles {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        height: 23px;
+        margin-top: -2.5px;
+        padding: 0px;
+    }
+    
+    #headerAisles:hover {
+        text-decoration: underline;
+    }
+
+    #aisles {
+        visibility: hidden;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        left: 100%;
+        margin-left: -280px;
+        margin-top: -1px;
+        border: 1px solid black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #aisles ul {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    #aisles ul li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #aisles ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #aisles ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #topBox {
+        margin-left: 3%;
+        margin-right: 3%;
+        background-color: #ecede6;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-bottom: 1px solid #cbccc3;
+        border-top: 1px solid #cbccc3;
+        text-align: center;
+    }
+
+    #topBox img {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    #searchBar {
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        margin-left: 15%;
+    }
+
+    .aisleRow {
+        width: 94%;
+        margin-left: 3%;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .aisleBoxLeft {
+        float: left;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxRight {
+        float:right;
+        width: 49%;
+        border: 1px solid #cbccc3;
+    }
+
+    .aisleBoxLeft img, .aisleBoxRight img {
+        width: 100%;
+    }
+}
