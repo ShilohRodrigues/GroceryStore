@@ -17,7 +17,7 @@ function onLoad(){
         var quantity = row.insertCell(2);
         var totalPrice = row.insertCell(3); 
         var remove = row.insertCell(4);
-        name.innerHTML = inCart[i].name;
+        name.innerHTML = '<img class="cartimg" src ='+inCart[i].image + '><BR>' + inCart[i].name;
         price.innerHTML = itemPrice + '$';
         quantity.innerHTML = '<button type="button" class="decrease">-</button> <input type="text" placeholder="" min="1" value ='+inCart[i].quantity+' class="quantity_tb"> <button type="button" class="increase">+</button>';
         totalPrice.innerHTML = (inCart[i].quantity * itemPrice).toFixed(2) + "$";
@@ -31,7 +31,7 @@ for ( let i = 0; i<increaseButtons.length;i++){
     increaseButtons[i].addEventListener('click', function(){
             var td = increaseButtons[i].parentNode;
             var tr = td.parentNode;
-            var name = tr.cells[0].innerHTML;
+            var name = tr.cells[0].textContent;
             var itemPrice = parseFloat(tr.cells[1].innerHTML.substring(0,tr.cells[1].innerHTML.length));
         for (let i = 0; i <inCart.length;i++){
             if (inCart[i].name == name){
@@ -47,7 +47,7 @@ for ( let i = 0; i<increaseButtons.length;i++){
      decreaseButtons[i].addEventListener('click',function(){
             var td = increaseButtons[i].parentNode;
             var tr = td.parentNode;
-            var name = tr.cells[0].innerHTML;
+            var name = tr.cells[0].textContent;
             var itemPrice = parseFloat(tr.cells[1].innerHTML.substring(0,tr.cells[1].innerHTML.length));
         for (let i = 0; i <inCart.length;i++){
             if (inCart[i].name == name){
@@ -71,7 +71,7 @@ for ( let i = 0; i<removeButtons.length;i++){
     removeButtons[i].addEventListener('click', function(){
         var td = removeButtons[i].parentNode;
         var tr = td.parentNode;
-        var name = tr.cells[0].innerHTML;
+        var name = tr.cells[0].textContent;
         tr.parentNode.removeChild(tr);
         for (let j = inCart.length-1;j>=0;j--){
             if ( inCart[j].name == name){

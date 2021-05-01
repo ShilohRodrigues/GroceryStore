@@ -394,6 +394,223 @@ const health = [
     },
 ]
 
+const outdoors = [
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/91RmQzKenOL._AC_SL1500_.jpg",
+        name: "HotHands Hand Warmers",
+        price: "$23.50",
+        description: "Long Lasting Safe Natural Odorless Air Activated Warmers " 
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/713yoywpMVL._AC_SL1500_.jpg",
+        name: "LED Camping Lantern",
+        price: "$22.25",
+        description: "Super Bright Portable Survival Lanterns, Must Have During Hurricane"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71smqRr0pmL._AC_SL1500_.jpg",
+        name: "Fitbit Charge 4",
+        price: "$16.97",
+        description: "Fitness and Activity Tracker with Built-in GPS, Heart Rate, Sleep & Swim Tracking."
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71E6NYbf24L._AC_SL1000_.jpg",
+        name: "OutdoorMaster OTG Ski Goggles",
+        price: "$27.99",
+        description: "Over Glasses Ski/Snowboard Goggles for Men, Women & Youth - 100% UV Protection"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/91nMKn2QZxL._AC_SL1500_.jpg",
+        name: "Curad Assorted Bandages",
+        price: "$9.99",
+        description: "Variety Pack 300 Pieces"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81617EXxu9L._AC_SL1500_.jpg",
+        name: "Yaktrax Walk",
+        price: "$19.99",
+        description: "Traction Cleats for Walking on Snow and Ice (1 Pair)"
+        
+    },
+    {
+        image : "https://images-na.ssl-images-amazon.com/images/I/81IsUQWDyFL._AC_SL1500_.jpg",
+        name: "GCI Outdoor Freestyle Rocker",
+        price: "$59.99",
+        description: "Portable Folding Rocking Chair"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/91pdA1mUr3L._SL1500_.jpg",
+        name: "Ziploc Sandwich Bags",
+        price: "$8.97",
+        description: "New Grip 'n Seal Technology, XL, 30 Count, Pack of 3 (90 Total Bags)"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71qIVOdsPKL._AC_UX569_.jpg",
+        name: "Snowboard Cargo Pants",
+        price: "$79.99",
+        description: "Arctix Men's Mountain Premium Snowboard Cargo Pants"
+        
+    },
+    {
+        image : "https://images-na.ssl-images-amazon.com/images/I/61hZMnfhqVL._AC_UX679_.jpg",
+        name: "B BINMEFVN Polar Fleece Neck Warmer",
+        price: "$11.99",
+        description: "Windproof Winter Neck Gaiter Cold Weather Face Mask for Men Women - 1 Pack"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/61iJcBgbUtL._AC_UY695_.jpg",
+        name: "FAGUMA Polarized Sports Sunglasses",
+        price: "$16.87",
+        description: "ffering 100% UV Protection,eliminate reflected light and scattered light."
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/712SlfqoT9L._AC_SL1500_.jpg",
+        name: "Premium Padded Ski Bag for Air Travel ",
+        price: "$59.87",
+        description: "Single Ski Carry Bags for Cross Country."
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/710biJICRHL._AC_SL1000_.jpg",
+        name: "OutdoorMaster Boot Bag",
+        price: "$49.99",
+        description: "Ski Boots and Snowboard Boots Bag, Excellent for Travel"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81SlLG7ApkL._AC_SL1500_.jpg",
+        name: "Retrospec H4 Ski & Snowboard Helmet with 9 Vents",
+        price: "$39.04",
+        description: "9 vents for ultimate temperature regulation."
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/715RkYLFOIL._AC_SL1500_.jpg",
+        name: "(3 Pack) White Athletic Sports Tape",
+        price: "$13.99",
+        description: "VERY Strong EASY Tear NO Sticky Residue BEST TAPE for Athlete & Medical Trainers. "
+        
+    }
+    
+];
+
+const household = [
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71IdKRlm8%2BL._AC_SL1417_.jpg",
+        name: "48 Pack AA High-Performance Alkaline Batteries",
+        price: "$15.49",
+        description: "AA 1.5-volt performance alkaline batteries "
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71bgaMKkxUL._AC_SL1026_.jpg",
+        name: "Presto!",
+        price: "$22.25",
+        description: "308-Sheet Mega Roll Toilet Paper, Ultra-Soft, 24 Count"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81L%2BoCXRrLL._AC_SL1500_.jpg",
+        name: "Cascade Complete Dishwasher Pods",
+        price: "$16.97",
+        description: "ActionPacs Detergent, Fresh Scent, 78 Count"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/41ilplpdAdL._AC_.jpg",
+        name: "Kleenex",
+        price: "$3.89",
+        description: "Everyday 9 x Pocket Tissues Packs - 8 Packs Included"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81GH4avveFL._AC_SL1500_.jpg",
+        name: "Dixie Everyday Paper Plates",
+        price: "$19.99",
+        description: " 10 1/16\" Plate,, Dinner Size Printed Disposable"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/61EGQtMTUTL._AC_SL1500_.jpg",
+        name: "Conair Defuzzer/Shaver",
+        price: "$12.99",
+        description: "Battery Operated Fabric Defuzzer/Shaver, White, Regular"
+        
+    },
+    {
+        image : "https://images-na.ssl-images-amazon.com/images/I/81UxrpZXUsL._AC_SL1500_.jpg",
+        name: "Swiffer Sweeper",
+        price: "$14.99",
+        description: "Dry + Wet All Purpose Floor Mopping and Cleaning Starter Kit"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/91pdA1mUr3L._SL1500_.jpg",
+        name: "Ziploc Sandwich Bags",
+        price: "$8.97",
+        description: "New Grip 'n Seal Technology, XL, 30 Count, Pack of 3 (90 Total Bags)"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71pTvh7Lp0L._AC_SL1500_.jpg",
+        name: "Downy Infusions",
+        price: "$13.88",
+        description: "Liquid Fabric Conditioner (Fabric Softener)"
+        
+    },
+    {
+        image : "https://images-na.ssl-images-amazon.com/images/I/81ZaumEwXlL._AC_SL1500_.jpg",
+        name: "Mrs. Meyer's Clean Day Liquid Hand Soap",
+        price: "$10.35",
+        description: "Cruelty Free and Biodegradable Formula, Honeysuckle Scent, 12.5 oz- Pack of 3"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/51PFG%2BCxS7L._AC_SL1000_.jpg",
+        name: "RONXS Lighters",
+        price: "$15.99",
+        description: "Candle Lighter Electric Lighter Grill Lighter USB Lighter Plasma Lighter R"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71VJVjdkMZL._AC_SL1500_.jpg",
+        name: "Dishwashing Cleaning Gloves",
+        price: "$12.99",
+        description: "Reusable Dishwashing Cleaning Gloves with Latex free"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81TWEkH5htL._AC_SL1500_.jpg",
+        name: "Trash Bags",
+        price: "$8.99 ",
+        description: "Hefty Recycling Trash Bags, Clear, 13 Gallon, 60 Count"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/51y-NudAJDL._AC_SL1001_.jpg",
+        name: "LED Refrigerator Light Bulb",
+        price: "$11.99",
+        description: "LED Refrigerator Light Bulb 40W Equivalent 120V"
+        
+    },
+    {
+        image: "https://images-na.ssl-images-amazon.com/images/I/81sI0PpnKoL._AC_SL1380_.jpg",
+        name: "Makerstep Wooden Toothpicks",
+        price: "$5.89",
+        description: "1000 Pieces Ornate Handle, Sturdy Cocktail Picks"
+        
+    }
+    
+];
 let products = [];
 
 function makeTable(aisle) {
@@ -413,7 +630,13 @@ function makeTable(aisle) {
     } else if (aisle === 'health') {
         products = health;
     }
-
+      else  if (aisle === 'outdoors'){
+          products = outdoors;
+    }
+      else if (aisle === 'household'){
+          products = household;
+    }
+    
     let rowCounter = 0,
         row = table.insertRow(rowCounter++);
     for (i in products) {
