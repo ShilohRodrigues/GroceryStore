@@ -459,16 +459,22 @@ function setListeners() {
     let items = document.querySelectorAll(".product-cell");
     for (let i = 0; i < items.length; i++) {
         items[i].addEventListener("click", function() {
-            document.getElementsByClassName("modal-box")[i].style.visibility = 'visible';
+        document.getElementsByClassName("modal-box")[i].style.visibility = 'visible';
+        //Stores current opened modal locally
+         var iteminfo = {description: document.querySelectorAll('.modal-description')[i].innerHTML,image:document.querySelectorAll('.modal-img')[i].src,name:document.querySelectorAll('.modal-name')[i].innerHTML,price:document.querySelectorAll('.modal-price')[i].innerHTML}
+        console.log(iteminfo);
+        localStorage.setItem('currentModal', JSON.stringify(iteminfo)); 
         });
     }
 
     // Closes product info popup on click of "x".
+    var totalprice = document.getElementsByClassName("modal-price-total");
     let modalItems = document.getElementsByClassName("modal-exit");
     for (let i = 0; i < modalItems.length; i++) {
         modalItems[i].addEventListener("click", function() {
             document.getElementsByClassName("modal-box")[i].style.visibility = 'hidden';
             value[i].value = 0;
+            totalprice[i].innerHTML = "Total value: $0";
         })
     }
 
@@ -496,4 +502,42 @@ function setListeners() {
             value[i].value = 0;
         })
     }
+    //adds items to cart
+    var addToCart = document.querySelectorAll('.add');
+    var inCart = [];
+    var quantity;
+    var itemprice = document.getElementsByClassName("modal-price");
+    for (let i = 0; i<addToCart.length; i++){
+        addToCart[i].addEventListener('click',function(){
+            localStorage.setItem('quantity',0);    
+            quantity = (parseFloat(totalprice[i].innerHTML.substring(14))/parseFloat(itemprice[i].innerHTML.substring(1))).toFixed(0);
+            if (quantity==0)
+                quantity=1;
+            console.log(quantity);
+           
+    localStorage.setItem('quantity', parseInt(localStorage.getItem('quantity'))+parseInt(quantity))
+    let product = JSON.parse(localStorage.getItem('currentModal'));
+        product.quantity = localStorage.getItem('quantity');
+    localStorage.removeItem('quantity');
+    
+    
+    if (localStorage.getItem('insideCart')!= null){
+        inCart = JSON.parse(localStorage.getItem('insideCart'));
+    }
+    var counter = 0;
+    for ( let i =0;i<inCart.length;i++){
+        if (product.name == inCart[i].name){
+            inCart[i].quantity = parseInt(inCart[i].quantity)+ parseInt(product.quantity);
+            counter = counter +1;
+        }
+    }
+    if (counter == 0 ){
+        inCart.push(product);
+    }
+    if (inCart[0] == undefined){
+        inCart.push(product);
+    }
+    localStorage.setItem('insideCart', JSON.stringify(inCart));
+ });
+}
 }
